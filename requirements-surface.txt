@@ -1,0 +1,6 @@
+# Optional dense surface stage; install after the core stack, with --no-build-isolation.
+utils3d @ git+https://github.com/EasternJournalist/utils3d.git@9a4eb15e4021b67b12c460c7057d642626897ec8
+flex_gemm @ git+https://github.com/JeffreyXiang/FlexGEMM.git@9f2f050396be3cc48894d15ce308e9672a07c677
+cumesh @ git+https://github.com/JeffreyXiang/CuMesh.git@cf1a2f07304b5fe388ed86a16e4a0474599df914
+./third_party/o-voxel
+

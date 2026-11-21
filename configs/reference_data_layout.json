@@ -1,0 +1,1982 @@
+[
+  {
+    "path": "data/assets/asset_0001",
+    "purpose": "base",
+    "basename": "trellis2_dataset"
+  },
+  {
+    "path": "data/assets/asset_0002",
+    "purpose": "ss_latent",
+    "basename": "ss_enc_conv3d_16l8_fp16_64_true1024"
+  },
+  {
+    "path": "data/assets/asset_0003",
+    "purpose": "include_instances",
+    "basename": "point_bw_Calgary.txt"
+  },
+  {
+    "path": "data/assets/asset_0004",
+    "purpose": "partial_xyz",
+    "basename": "oriented_pc_zmin"
+  },
+  {
+    "path": "data/assets/asset_0005",
+    "purpose": "base",
+    "basename": "HongKong_trellis2_ovoxel_1024"
+  },
+  {
+    "path": "data/assets/asset_0006",
+    "purpose": "ss_latent",
+    "basename": "ss_enc_conv3d_16l8_fp16_64_hk_zup_nobottom_safe"
+  },
+  {
+    "path": "data/assets/asset_0007",
+    "purpose": "include_instances",
+    "basename": "point_bw_HongKong_fixedgt.txt"
+  },
+  {
+    "path": "data/assets/asset_0008",
+    "purpose": "partial_xyz",
+    "basename": "oriented_pc_zmin"
+  },
+  {
+    "path": "data/assets/asset_0009",
+    "purpose": "ss_latent",
+    "basename": "ss_enc_conv3d_16l8_fp16_64_true1024_hk_ymax_to_zmin"
+  },
+  {
+    "path": "data/assets/asset_0010",
+    "purpose": "include_instances",
+    "basename": "point_bw_HongKong_legacytail.txt"
+  },
+  {
+    "path": "data/assets/asset_0011",
+    "purpose": "base",
+    "basename": "Montreal_trellis2_ovoxel_1024"
+  },
+  {
+    "path": "data/assets/asset_0012",
+    "purpose": "ss_latent",
+    "basename": "ss_enc_conv3d_16l8_fp16_64_true1024"
+  },
+  {
+    "path": "data/assets/asset_0013",
+    "purpose": "include_instances",
+    "basename": "point_bw_Montreal.txt"
+  },
+  {
+    "path": "data/assets/asset_0014",
+    "purpose": "partial_xyz",
+    "basename": "oriented_pc_zmin"
+  },
+  {
+    "path": "data/assets/asset_0015",
+    "purpose": "base",
+    "basename": "Tokoy_trellis2_ovoxel_1024"
+  },
+  {
+    "path": "data/assets/asset_0016",
+    "purpose": "ss_latent",
+    "basename": "ss_enc_conv3d_16l8_fp16_64_true1024"
+  },
+  {
+    "path": "data/assets/asset_0017",
+    "purpose": "include_instances",
+    "basename": "point_bw_Tokoy.txt"
+  },
+  {
+    "path": "data/assets/asset_0018",
+    "purpose": "partial_xyz",
+    "basename": "oriented_pc_zmin"
+  },
+  {
+    "path": "data/assets/asset_0019",
+    "purpose": "base",
+    "basename": "Wellington_trellis2_ovoxel_1024"
+  },
+  {
+    "path": "data/assets/asset_0020",
+    "purpose": "ss_latent",
+    "basename": "ss_enc_conv3d_16l8_fp16_64_true1024"
+  },
+  {
+    "path": "data/assets/asset_0021",
+    "purpose": "include_instances",
+    "basename": "point_bw_Wellington.txt"
+  },
+  {
+    "path": "data/assets/asset_0022",
+    "purpose": "partial_xyz",
+    "basename": "oriented_pc_zmin"
+  },
+  {
+    "path": "data/assets/asset_0023",
+    "purpose": "base",
+    "basename": "BuildingPCC"
+  },
+  {
+    "path": "data/assets/asset_0024",
+    "purpose": "ss_latent",
+    "basename": "ss_enc_conv3d_16l8_fp16_64_true1024"
+  },
+  {
+    "path": "data/assets/asset_0025",
+    "purpose": "partial_xyz",
+    "basename": "partial_xyz"
+  },
+  {
+    "path": "data/assets/asset_0026",
+    "purpose": "include_instances",
+    "basename": "point_buildingpcc_sfm.txt"
+  },
+  {
+    "path": "data/assets/asset_0027",
+    "purpose": "include_instances",
+    "basename": "point_buildingpcc_sparse.txt"
+  },
+  {
+    "path": "data/assets/asset_0028",
+    "purpose": "base",
+    "basename": "LidarConference"
+  },
+  {
+    "path": "data/assets/asset_0029",
+    "purpose": "ss_latent",
+    "basename": "ss_enc_conv3d_16l8_fp16_64_true1024"
+  },
+  {
+    "path": "data/assets/asset_0030",
+    "purpose": "include_instances",
+    "basename": "point_lidar.txt"
+  },
+  {
+    "path": "data/assets/asset_0031",
+    "purpose": "partial_xyz",
+    "basename": "partial_xyz"
+  },
+  {
+    "path": "data/assets/asset_0032",
+    "purpose": "include_instances",
+    "basename": "point_lidar_b.txt"
+  },
+  {
+    "path": "data/assets/asset_0033",
+    "purpose": "include_instances",
+    "basename": "point_lidar_c.txt"
+  },
+  {
+    "path": "data/assets/asset_0034",
+    "purpose": "base",
+    "basename": "Boston_trellis2_ovoxel_1024"
+  },
+  {
+    "path": "data/assets/asset_0035",
+    "purpose": "ss_latent",
+    "basename": "ss_enc_conv3d_16l8_fp16_64_vox64"
+  },
+  {
+    "path": "data/assets/asset_0036",
+    "purpose": "include_instances",
+    "basename": "point_nw_Boston.txt"
+  },
+  {
+    "path": "data/assets/asset_0037",
+    "purpose": "partial_xyz",
+    "basename": "partial_xyz"
+  },
+  {
+    "path": "data/assets/asset_0038",
+    "purpose": "base",
+    "basename": "Cape Town_trellis2_ovoxel_1024"
+  },
+  {
+    "path": "data/assets/asset_0039",
+    "purpose": "ss_latent",
+    "basename": "ss_enc_conv3d_16l8_fp16_64_vox64"
+  },
+  {
+    "path": "data/assets/asset_0040",
+    "purpose": "include_instances",
+    "basename": "point_nw_CapeTown.txt"
+  },
+  {
+    "path": "data/assets/asset_0041",
+    "purpose": "partial_xyz",
+    "basename": "partial_xyz"
+  },
+  {
+    "path": "data/assets/asset_0042",
+    "purpose": "base",
+    "basename": "Cambridge_trellis2_ovoxel_1024"
+  },
+  {
+    "path": "data/assets/asset_0043",
+    "purpose": "ss_latent",
+    "basename": "ss_enc_conv3d_16l8_fp16_64_vox64"
+  },
+  {
+    "path": "data/assets/asset_0044",
+    "purpose": "include_instances",
+    "basename": "point_nw_Cambridge.txt"
+  },
+  {
+    "path": "data/assets/asset_0045",
+    "purpose": "partial_xyz",
+    "basename": "partial_xyz"
+  },
+  {
+    "path": "data/assets/asset_0046",
+    "purpose": "base",
+    "basename": "Edmonton_trellis2_ovoxel_1024"
+  },
+  {
+    "path": "data/assets/asset_0047",
+    "purpose": "ss_latent",
+    "basename": "ss_enc_conv3d_16l8_fp16_64_vox64"
+  },
+  {
+    "path": "data/assets/asset_0048",
+    "purpose": "include_instances",
+    "basename": "point_nw_Edmonton.txt"
+  },
+  {
+    "path": "data/assets/asset_0049",
+    "purpose": "partial_xyz",
+    "basename": "partial_xyz"
+  },
+  {
+    "path": "data/assets/asset_0050",
+    "purpose": "base",
+    "basename": "Greater Geelong_trellis2_ovoxel_1024"
+  },
+  {
+    "path": "data/assets/asset_0051",
+    "purpose": "ss_latent",
+    "basename": "ss_enc_conv3d_16l8_fp16_64_vox64"
+  },
+  {
+    "path": "data/assets/asset_0052",
+    "purpose": "include_instances",
+    "basename": "point_nw_GreaterGeelong.txt"
+  },
+  {
+    "path": "data/assets/asset_0053",
+    "purpose": "partial_xyz",
+    "basename": "partial_xyz"
+  },
+  {
+    "path": "data/assets/asset_0054",
+    "purpose": "base",
+    "basename": "Melbourne_trellis2_ovoxel_1024"
+  },
+  {
+    "path": "data/assets/asset_0055",
+    "purpose": "ss_latent",
+    "basename": "ss_enc_conv3d_16l8_fp16_64_vox64"
+  },
+  {
+    "path": "data/assets/asset_0056",
+    "purpose": "include_instances",
+    "basename": "point_nw_Melbourne.txt"
+  },
+  {
+    "path": "data/assets/asset_0057",
+    "purpose": "partial_xyz",
+    "basename": "partial_xyz"
+  },
+  {
+    "path": "data/assets/asset_0058",
+    "purpose": "base",
+    "basename": "Mississauga_trellis2_ovoxel_1024"
+  },
+  {
+    "path": "data/assets/asset_0059",
+    "purpose": "ss_latent",
+    "basename": "ss_enc_conv3d_16l8_fp16_64_vox64"
+  },
+  {
+    "path": "data/assets/asset_0060",
+    "purpose": "include_instances",
+    "basename": "point_nw_Mississauga.txt"
+  },
+  {
+    "path": "data/assets/asset_0061",
+    "purpose": "partial_xyz",
+    "basename": "partial_xyz"
+  },
+  {
+    "path": "data/assets/asset_0062",
+    "purpose": "base",
+    "basename": "New York_trellis2_ovoxel_1024"
+  },
+  {
+    "path": "data/assets/asset_0063",
+    "purpose": "ss_latent",
+    "basename": "ss_enc_conv3d_16l8_fp16_64_vox64"
+  },
+  {
+    "path": "data/assets/asset_0064",
+    "purpose": "include_instances",
+    "basename": "point_nw_NewYork.txt"
+  },
+  {
+    "path": "data/assets/asset_0065",
+    "purpose": "partial_xyz",
+    "basename": "partial_xyz"
+  },
+  {
+    "path": "data/assets/asset_0066",
+    "purpose": "base",
+    "basename": "Philadelphia_trellis2_ovoxel_1024"
+  },
+  {
+    "path": "data/assets/asset_0067",
+    "purpose": "ss_latent",
+    "basename": "ss_enc_conv3d_16l8_fp16_64_vox64"
+  },
+  {
+    "path": "data/assets/asset_0068",
+    "purpose": "include_instances",
+    "basename": "point_nw_Philadelphia.txt"
+  },
+  {
+    "path": "data/assets/asset_0069",
+    "purpose": "partial_xyz",
+    "basename": "partial_xyz"
+  },
+  {
+    "path": "data/assets/asset_0070",
+    "purpose": "base",
+    "basename": "San Francisco_trellis2_ovoxel_1024"
+  },
+  {
+    "path": "data/assets/asset_0071",
+    "purpose": "ss_latent",
+    "basename": "ss_enc_conv3d_16l8_fp16_64_vox64"
+  },
+  {
+    "path": "data/assets/asset_0072",
+    "purpose": "include_instances",
+    "basename": "point_nw_SanFrancisco.txt"
+  },
+  {
+    "path": "data/assets/asset_0073",
+    "purpose": "partial_xyz",
+    "basename": "partial_xyz"
+  },
+  {
+    "path": "data/assets/asset_0074",
+    "purpose": "base",
+    "basename": "Toronto_trellis2_ovoxel_1024"
+  },
+  {
+    "path": "data/assets/asset_0075",
+    "purpose": "ss_latent",
+    "basename": "ss_enc_conv3d_16l8_fp16_64_vox64"
+  },
+  {
+    "path": "data/assets/asset_0076",
+    "purpose": "include_instances",
+    "basename": "point_nw_Toronto.txt"
+  },
+  {
+    "path": "data/assets/asset_0077",
+    "purpose": "partial_xyz",
+    "basename": "partial_xyz"
+  },
+  {
+    "path": "data/assets/asset_0078",
+    "purpose": "base",
+    "basename": "Yarra_trellis2_ovoxel_1024"
+  },
+  {
+    "path": "data/assets/asset_0079",
+    "purpose": "ss_latent",
+    "basename": "ss_enc_conv3d_16l8_fp16_64_vox64"
+  },
+  {
+    "path": "data/assets/asset_0080",
+    "purpose": "include_instances",
+    "basename": "point_nw_Yarra.txt"
+  },
+  {
+    "path": "data/assets/asset_0081",
+    "purpose": "partial_xyz",
+    "basename": "partial_xyz"
+  },
+  {
+    "path": "data/assets/asset_0082",
+    "purpose": "base",
+    "basename": "Perth_trellis2_ovoxel_1024"
+  },
+  {
+    "path": "data/assets/asset_0083",
+    "purpose": "ss_latent",
+    "basename": "ss_enc_conv3d_16l8_fp16_64_vox64"
+  },
+  {
+    "path": "data/assets/asset_0084",
+    "purpose": "include_instances",
+    "basename": "point_nw_Perth.txt"
+  },
+  {
+    "path": "data/assets/asset_0085",
+    "purpose": "partial_xyz",
+    "basename": "partial_xyz"
+  },
+  {
+    "path": "data/assets/asset_0086",
+    "purpose": "render_cond",
+    "basename": "renders_cond"
+  },
+  {
+    "path": "data/assets/asset_0087",
+    "purpose": "alpha_mask_root",
+    "basename": "cutout_masks"
+  },
+  {
+    "path": "data/assets/asset_0088",
+    "purpose": "include_instances",
+    "basename": "image_Boston_A.txt"
+  },
+  {
+    "path": "data/assets/asset_0089",
+    "purpose": "include_instances",
+    "basename": "image_Boston_B.txt"
+  },
+  {
+    "path": "data/assets/asset_0090",
+    "purpose": "include_instances",
+    "basename": "image_Boston_C.txt"
+  },
+  {
+    "path": "data/assets/asset_0091",
+    "purpose": "include_instances",
+    "basename": "both_Boston_A.txt"
+  },
+  {
+    "path": "data/assets/asset_0092",
+    "purpose": "include_instances",
+    "basename": "both_Boston_B.txt"
+  },
+  {
+    "path": "data/assets/asset_0093",
+    "purpose": "include_instances",
+    "basename": "rough_lod0_nw_Boston_A.txt"
+  },
+  {
+    "path": "data/assets/asset_0094",
+    "purpose": "coords_dir",
+    "basename": "vox64"
+  },
+  {
+    "path": "data/assets/asset_0095",
+    "purpose": "cache_dir",
+    "basename": "aec84f67791a00fe"
+  },
+  {
+    "path": "data/assets/asset_0096",
+    "purpose": "include_instances",
+    "basename": "rough_lod0_nw_Boston_B.txt"
+  },
+  {
+    "path": "data/assets/asset_0097",
+    "purpose": "include_instances",
+    "basename": "rough_lod0_nw_Boston_C.txt"
+  },
+  {
+    "path": "data/assets/asset_0098",
+    "purpose": "include_instances",
+    "basename": "rough_lod1_nw_Boston_A.txt"
+  },
+  {
+    "path": "data/assets/asset_0099",
+    "purpose": "cache_dir",
+    "basename": "c9cd1cae6e089aff"
+  },
+  {
+    "path": "data/assets/asset_0100",
+    "purpose": "include_instances",
+    "basename": "rough_lod1_nw_Boston_B.txt"
+  },
+  {
+    "path": "data/assets/asset_0101",
+    "purpose": "include_instances",
+    "basename": "rough_lod1_nw_Boston_C.txt"
+  },
+  {
+    "path": "data/assets/asset_0102",
+    "purpose": "include_instances",
+    "basename": "image_Calgary_A.txt"
+  },
+  {
+    "path": "data/assets/asset_0103",
+    "purpose": "render_cond",
+    "basename": "renders_cond"
+  },
+  {
+    "path": "data/assets/asset_0104",
+    "purpose": "alpha_mask_root",
+    "basename": "Calgary"
+  },
+  {
+    "path": "data/assets/asset_0105",
+    "purpose": "include_instances",
+    "basename": "image_Calgary_B.txt"
+  },
+  {
+    "path": "data/assets/asset_0106",
+    "purpose": "include_instances",
+    "basename": "image_Calgary_C.txt"
+  },
+  {
+    "path": "data/assets/asset_0107",
+    "purpose": "include_instances",
+    "basename": "both_Calgary_A.txt"
+  },
+  {
+    "path": "data/assets/asset_0108",
+    "purpose": "include_instances",
+    "basename": "both_Calgary_B.txt"
+  },
+  {
+    "path": "data/assets/asset_0109",
+    "purpose": "include_instances",
+    "basename": "rough_cutout_osm_bw_Calgary_A.txt"
+  },
+  {
+    "path": "data/assets/asset_0110",
+    "purpose": "coords_dir",
+    "basename": "ss_occupancy_64_osm_satskylines_gt_height"
+  },
+  {
+    "path": "data/assets/asset_0111",
+    "purpose": "cache_dir",
+    "basename": "b186edbbfa64ab69"
+  },
+  {
+    "path": "data/assets/asset_0112",
+    "purpose": "include_instances",
+    "basename": "rough_cutout_osm_bw_Calgary_B.txt"
+  },
+  {
+    "path": "data/assets/asset_0113",
+    "purpose": "include_instances",
+    "basename": "rough_cutout_osm_bw_Calgary_C.txt"
+  },
+  {
+    "path": "data/assets/asset_0114",
+    "purpose": "include_instances",
+    "basename": "rough_lod0_bw_Calgary_A.txt"
+  },
+  {
+    "path": "data/assets/asset_0115",
+    "purpose": "coords_dir",
+    "basename": "shape_enc_next_dc_f16c32_fp16_1024"
+  },
+  {
+    "path": "data/assets/asset_0116",
+    "purpose": "cache_dir",
+    "basename": "e8147501372669b8"
+  },
+  {
+    "path": "data/assets/asset_0117",
+    "purpose": "include_instances",
+    "basename": "rough_lod0_bw_Calgary_B.txt"
+  },
+  {
+    "path": "data/assets/asset_0118",
+    "purpose": "include_instances",
+    "basename": "rough_lod0_bw_Calgary_C.txt"
+  },
+  {
+    "path": "data/assets/asset_0119",
+    "purpose": "include_instances",
+    "basename": "rough_lod1_bw_Calgary_A.txt"
+  },
+  {
+    "path": "data/assets/asset_0120",
+    "purpose": "cache_dir",
+    "basename": "49546261bf781399"
+  },
+  {
+    "path": "data/assets/asset_0121",
+    "purpose": "include_instances",
+    "basename": "rough_lod1_bw_Calgary_B.txt"
+  },
+  {
+    "path": "data/assets/asset_0122",
+    "purpose": "include_instances",
+    "basename": "rough_lod1_bw_Calgary_C.txt"
+  },
+  {
+    "path": "data/assets/asset_0123",
+    "purpose": "render_cond",
+    "basename": "renders_cond"
+  },
+  {
+    "path": "data/assets/asset_0124",
+    "purpose": "alpha_mask_root",
+    "basename": "cutout_masks"
+  },
+  {
+    "path": "data/assets/asset_0125",
+    "purpose": "include_instances",
+    "basename": "image_Cambridge_A.txt"
+  },
+  {
+    "path": "data/assets/asset_0126",
+    "purpose": "include_instances",
+    "basename": "image_Cambridge_B.txt"
+  },
+  {
+    "path": "data/assets/asset_0127",
+    "purpose": "include_instances",
+    "basename": "image_Cambridge_C.txt"
+  },
+  {
+    "path": "data/assets/asset_0128",
+    "purpose": "include_instances",
+    "basename": "both_Cambridge_A.txt"
+  },
+  {
+    "path": "data/assets/asset_0129",
+    "purpose": "include_instances",
+    "basename": "both_Cambridge_B.txt"
+  },
+  {
+    "path": "data/assets/asset_0130",
+    "purpose": "include_instances",
+    "basename": "rough_lod0_nw_Cambridge_A.txt"
+  },
+  {
+    "path": "data/assets/asset_0131",
+    "purpose": "coords_dir",
+    "basename": "vox64"
+  },
+  {
+    "path": "data/assets/asset_0132",
+    "purpose": "cache_dir",
+    "basename": "7c80c289cc41f189"
+  },
+  {
+    "path": "data/assets/asset_0133",
+    "purpose": "include_instances",
+    "basename": "rough_lod0_nw_Cambridge_B.txt"
+  },
+  {
+    "path": "data/assets/asset_0134",
+    "purpose": "include_instances",
+    "basename": "rough_lod0_nw_Cambridge_C.txt"
+  },
+  {
+    "path": "data/assets/asset_0135",
+    "purpose": "include_instances",
+    "basename": "rough_lod1_nw_Cambridge_A.txt"
+  },
+  {
+    "path": "data/assets/asset_0136",
+    "purpose": "cache_dir",
+    "basename": "1faddd31fc9c3edd"
+  },
+  {
+    "path": "data/assets/asset_0137",
+    "purpose": "include_instances",
+    "basename": "rough_lod1_nw_Cambridge_B.txt"
+  },
+  {
+    "path": "data/assets/asset_0138",
+    "purpose": "include_instances",
+    "basename": "rough_lod1_nw_Cambridge_C.txt"
+  },
+  {
+    "path": "data/assets/asset_0139",
+    "purpose": "render_cond",
+    "basename": "renders_cond"
+  },
+  {
+    "path": "data/assets/asset_0140",
+    "purpose": "alpha_mask_root",
+    "basename": "cutout_masks"
+  },
+  {
+    "path": "data/assets/asset_0141",
+    "purpose": "include_instances",
+    "basename": "image_CapeTown_A.txt"
+  },
+  {
+    "path": "data/assets/asset_0142",
+    "purpose": "include_instances",
+    "basename": "image_CapeTown_B.txt"
+  },
+  {
+    "path": "data/assets/asset_0143",
+    "purpose": "include_instances",
+    "basename": "image_CapeTown_C.txt"
+  },
+  {
+    "path": "data/assets/asset_0144",
+    "purpose": "include_instances",
+    "basename": "both_CapeTown_A.txt"
+  },
+  {
+    "path": "data/assets/asset_0145",
+    "purpose": "include_instances",
+    "basename": "both_CapeTown_B.txt"
+  },
+  {
+    "path": "data/assets/asset_0146",
+    "purpose": "include_instances",
+    "basename": "rough_lod0_nw_CapeTown_A.txt"
+  },
+  {
+    "path": "data/assets/asset_0147",
+    "purpose": "coords_dir",
+    "basename": "vox64"
+  },
+  {
+    "path": "data/assets/asset_0148",
+    "purpose": "cache_dir",
+    "basename": "33abf37cf36cae0c"
+  },
+  {
+    "path": "data/assets/asset_0149",
+    "purpose": "include_instances",
+    "basename": "rough_lod0_nw_CapeTown_B.txt"
+  },
+  {
+    "path": "data/assets/asset_0150",
+    "purpose": "include_instances",
+    "basename": "rough_lod0_nw_CapeTown_C.txt"
+  },
+  {
+    "path": "data/assets/asset_0151",
+    "purpose": "include_instances",
+    "basename": "rough_lod1_nw_CapeTown_A.txt"
+  },
+  {
+    "path": "data/assets/asset_0152",
+    "purpose": "cache_dir",
+    "basename": "3d7cc7d5564481fc"
+  },
+  {
+    "path": "data/assets/asset_0153",
+    "purpose": "include_instances",
+    "basename": "rough_lod1_nw_CapeTown_B.txt"
+  },
+  {
+    "path": "data/assets/asset_0154",
+    "purpose": "include_instances",
+    "basename": "rough_lod1_nw_CapeTown_C.txt"
+  },
+  {
+    "path": "data/assets/asset_0155",
+    "purpose": "render_cond",
+    "basename": "renders_cond"
+  },
+  {
+    "path": "data/assets/asset_0156",
+    "purpose": "alpha_mask_root",
+    "basename": "cutout_masks"
+  },
+  {
+    "path": "data/assets/asset_0157",
+    "purpose": "include_instances",
+    "basename": "image_Edmonton_A.txt"
+  },
+  {
+    "path": "data/assets/asset_0158",
+    "purpose": "include_instances",
+    "basename": "image_Edmonton_B.txt"
+  },
+  {
+    "path": "data/assets/asset_0159",
+    "purpose": "include_instances",
+    "basename": "image_Edmonton_C.txt"
+  },
+  {
+    "path": "data/assets/asset_0160",
+    "purpose": "include_instances",
+    "basename": "both_Edmonton_A.txt"
+  },
+  {
+    "path": "data/assets/asset_0161",
+    "purpose": "include_instances",
+    "basename": "both_Edmonton_B.txt"
+  },
+  {
+    "path": "data/assets/asset_0162",
+    "purpose": "include_instances",
+    "basename": "rough_lod0_nw_Edmonton_A.txt"
+  },
+  {
+    "path": "data/assets/asset_0163",
+    "purpose": "coords_dir",
+    "basename": "vox64"
+  },
+  {
+    "path": "data/assets/asset_0164",
+    "purpose": "cache_dir",
+    "basename": "a1a57142c585cc32"
+  },
+  {
+    "path": "data/assets/asset_0165",
+    "purpose": "include_instances",
+    "basename": "rough_lod0_nw_Edmonton_B.txt"
+  },
+  {
+    "path": "data/assets/asset_0166",
+    "purpose": "include_instances",
+    "basename": "rough_lod0_nw_Edmonton_C.txt"
+  },
+  {
+    "path": "data/assets/asset_0167",
+    "purpose": "include_instances",
+    "basename": "rough_lod1_nw_Edmonton_A.txt"
+  },
+  {
+    "path": "data/assets/asset_0168",
+    "purpose": "cache_dir",
+    "basename": "a415d1d745337a94"
+  },
+  {
+    "path": "data/assets/asset_0169",
+    "purpose": "include_instances",
+    "basename": "rough_lod1_nw_Edmonton_B.txt"
+  },
+  {
+    "path": "data/assets/asset_0170",
+    "purpose": "include_instances",
+    "basename": "rough_lod1_nw_Edmonton_C.txt"
+  },
+  {
+    "path": "data/assets/asset_0171",
+    "purpose": "render_cond",
+    "basename": "renders_cond"
+  },
+  {
+    "path": "data/assets/asset_0172",
+    "purpose": "alpha_mask_root",
+    "basename": "cutout_masks"
+  },
+  {
+    "path": "data/assets/asset_0173",
+    "purpose": "include_instances",
+    "basename": "image_GreaterGeelong_A.txt"
+  },
+  {
+    "path": "data/assets/asset_0174",
+    "purpose": "include_instances",
+    "basename": "image_GreaterGeelong_B.txt"
+  },
+  {
+    "path": "data/assets/asset_0175",
+    "purpose": "include_instances",
+    "basename": "image_GreaterGeelong_C.txt"
+  },
+  {
+    "path": "data/assets/asset_0176",
+    "purpose": "include_instances",
+    "basename": "both_GreaterGeelong_A.txt"
+  },
+  {
+    "path": "data/assets/asset_0177",
+    "purpose": "include_instances",
+    "basename": "both_GreaterGeelong_B.txt"
+  },
+  {
+    "path": "data/assets/asset_0178",
+    "purpose": "include_instances",
+    "basename": "rough_lod0_nw_GreaterGeelong_A.txt"
+  },
+  {
+    "path": "data/assets/asset_0179",
+    "purpose": "coords_dir",
+    "basename": "vox64"
+  },
+  {
+    "path": "data/assets/asset_0180",
+    "purpose": "cache_dir",
+    "basename": "518e52d6c584807f"
+  },
+  {
+    "path": "data/assets/asset_0181",
+    "purpose": "include_instances",
+    "basename": "rough_lod0_nw_GreaterGeelong_B.txt"
+  },
+  {
+    "path": "data/assets/asset_0182",
+    "purpose": "include_instances",
+    "basename": "rough_lod0_nw_GreaterGeelong_C.txt"
+  },
+  {
+    "path": "data/assets/asset_0183",
+    "purpose": "include_instances",
+    "basename": "rough_lod1_nw_GreaterGeelong_A.txt"
+  },
+  {
+    "path": "data/assets/asset_0184",
+    "purpose": "cache_dir",
+    "basename": "a74904b98f043ff0"
+  },
+  {
+    "path": "data/assets/asset_0185",
+    "purpose": "include_instances",
+    "basename": "rough_lod1_nw_GreaterGeelong_B.txt"
+  },
+  {
+    "path": "data/assets/asset_0186",
+    "purpose": "include_instances",
+    "basename": "rough_lod1_nw_GreaterGeelong_C.txt"
+  },
+  {
+    "path": "data/assets/asset_0187",
+    "purpose": "include_instances",
+    "basename": "image_HongKong_A.txt"
+  },
+  {
+    "path": "data/assets/asset_0188",
+    "purpose": "render_cond",
+    "basename": "renders_cond"
+  },
+  {
+    "path": "data/assets/asset_0189",
+    "purpose": "alpha_mask_root",
+    "basename": "HongKong"
+  },
+  {
+    "path": "data/assets/asset_0190",
+    "purpose": "include_instances",
+    "basename": "image_HongKong_B.txt"
+  },
+  {
+    "path": "data/assets/asset_0191",
+    "purpose": "include_instances",
+    "basename": "image_HongKong_C.txt"
+  },
+  {
+    "path": "data/assets/asset_0192",
+    "purpose": "include_instances",
+    "basename": "both_HongKong_A.txt"
+  },
+  {
+    "path": "data/assets/asset_0193",
+    "purpose": "include_instances",
+    "basename": "both_HongKong_B.txt"
+  },
+  {
+    "path": "data/assets/asset_0194",
+    "purpose": "include_instances",
+    "basename": "rough_cutout_osm_bw_HongKong_A.txt"
+  },
+  {
+    "path": "data/assets/asset_0195",
+    "purpose": "coords_dir",
+    "basename": "ss_occupancy_64_osm_satskylines_gt_height"
+  },
+  {
+    "path": "data/assets/asset_0196",
+    "purpose": "cache_dir",
+    "basename": "3add38982aac286e"
+  },
+  {
+    "path": "data/assets/asset_0197",
+    "purpose": "include_instances",
+    "basename": "rough_cutout_osm_bw_HongKong_B.txt"
+  },
+  {
+    "path": "data/assets/asset_0198",
+    "purpose": "include_instances",
+    "basename": "rough_cutout_osm_bw_HongKong_C.txt"
+  },
+  {
+    "path": "data/assets/asset_0199",
+    "purpose": "include_instances",
+    "basename": "rough_lod0_bw_HongKong_A.txt"
+  },
+  {
+    "path": "data/assets/asset_0200",
+    "purpose": "coords_dir",
+    "basename": "shape_enc_next_dc_f16c32_fp16_1024"
+  },
+  {
+    "path": "data/assets/asset_0201",
+    "purpose": "cache_dir",
+    "basename": "b50e56a4dd0198f0"
+  },
+  {
+    "path": "data/assets/asset_0202",
+    "purpose": "include_instances",
+    "basename": "rough_lod0_bw_HongKong_B.txt"
+  },
+  {
+    "path": "data/assets/asset_0203",
+    "purpose": "include_instances",
+    "basename": "rough_lod0_bw_HongKong_C.txt"
+  },
+  {
+    "path": "data/assets/asset_0204",
+    "purpose": "include_instances",
+    "basename": "rough_lod1_bw_HongKong_A.txt"
+  },
+  {
+    "path": "data/assets/asset_0205",
+    "purpose": "cache_dir",
+    "basename": "91527496a2b0abd4"
+  },
+  {
+    "path": "data/assets/asset_0206",
+    "purpose": "include_instances",
+    "basename": "rough_lod1_bw_HongKong_B.txt"
+  },
+  {
+    "path": "data/assets/asset_0207",
+    "purpose": "include_instances",
+    "basename": "rough_lod1_bw_HongKong_C.txt"
+  },
+  {
+    "path": "data/assets/asset_0208",
+    "purpose": "render_cond",
+    "basename": "renders_cond"
+  },
+  {
+    "path": "data/assets/asset_0209",
+    "purpose": "alpha_mask_root",
+    "basename": "cutout_masks"
+  },
+  {
+    "path": "data/assets/asset_0210",
+    "purpose": "include_instances",
+    "basename": "image_Melbourne_A.txt"
+  },
+  {
+    "path": "data/assets/asset_0211",
+    "purpose": "include_instances",
+    "basename": "image_Melbourne_B.txt"
+  },
+  {
+    "path": "data/assets/asset_0212",
+    "purpose": "include_instances",
+    "basename": "image_Melbourne_C.txt"
+  },
+  {
+    "path": "data/assets/asset_0213",
+    "purpose": "include_instances",
+    "basename": "both_Melbourne_A.txt"
+  },
+  {
+    "path": "data/assets/asset_0214",
+    "purpose": "include_instances",
+    "basename": "both_Melbourne_B.txt"
+  },
+  {
+    "path": "data/assets/asset_0215",
+    "purpose": "include_instances",
+    "basename": "rough_lod0_nw_Melbourne_A.txt"
+  },
+  {
+    "path": "data/assets/asset_0216",
+    "purpose": "coords_dir",
+    "basename": "vox64"
+  },
+  {
+    "path": "data/assets/asset_0217",
+    "purpose": "cache_dir",
+    "basename": "f6634285c3ca11fb"
+  },
+  {
+    "path": "data/assets/asset_0218",
+    "purpose": "include_instances",
+    "basename": "rough_lod0_nw_Melbourne_B.txt"
+  },
+  {
+    "path": "data/assets/asset_0219",
+    "purpose": "include_instances",
+    "basename": "rough_lod0_nw_Melbourne_C.txt"
+  },
+  {
+    "path": "data/assets/asset_0220",
+    "purpose": "include_instances",
+    "basename": "rough_lod1_nw_Melbourne_A.txt"
+  },
+  {
+    "path": "data/assets/asset_0221",
+    "purpose": "cache_dir",
+    "basename": "8a760b57e7108ab2"
+  },
+  {
+    "path": "data/assets/asset_0222",
+    "purpose": "include_instances",
+    "basename": "rough_lod1_nw_Melbourne_B.txt"
+  },
+  {
+    "path": "data/assets/asset_0223",
+    "purpose": "include_instances",
+    "basename": "rough_lod1_nw_Melbourne_C.txt"
+  },
+  {
+    "path": "data/assets/asset_0224",
+    "purpose": "render_cond",
+    "basename": "renders_cond"
+  },
+  {
+    "path": "data/assets/asset_0225",
+    "purpose": "alpha_mask_root",
+    "basename": "cutout_masks"
+  },
+  {
+    "path": "data/assets/asset_0226",
+    "purpose": "include_instances",
+    "basename": "image_Mississauga_A.txt"
+  },
+  {
+    "path": "data/assets/asset_0227",
+    "purpose": "include_instances",
+    "basename": "image_Mississauga_B.txt"
+  },
+  {
+    "path": "data/assets/asset_0228",
+    "purpose": "include_instances",
+    "basename": "image_Mississauga_C.txt"
+  },
+  {
+    "path": "data/assets/asset_0229",
+    "purpose": "include_instances",
+    "basename": "both_Mississauga_A.txt"
+  },
+  {
+    "path": "data/assets/asset_0230",
+    "purpose": "include_instances",
+    "basename": "both_Mississauga_B.txt"
+  },
+  {
+    "path": "data/assets/asset_0231",
+    "purpose": "include_instances",
+    "basename": "rough_lod0_nw_Mississauga_A.txt"
+  },
+  {
+    "path": "data/assets/asset_0232",
+    "purpose": "coords_dir",
+    "basename": "vox64"
+  },
+  {
+    "path": "data/assets/asset_0233",
+    "purpose": "cache_dir",
+    "basename": "69b71872bc0d64ce"
+  },
+  {
+    "path": "data/assets/asset_0234",
+    "purpose": "include_instances",
+    "basename": "rough_lod0_nw_Mississauga_B.txt"
+  },
+  {
+    "path": "data/assets/asset_0235",
+    "purpose": "include_instances",
+    "basename": "rough_lod0_nw_Mississauga_C.txt"
+  },
+  {
+    "path": "data/assets/asset_0236",
+    "purpose": "include_instances",
+    "basename": "rough_lod1_nw_Mississauga_A.txt"
+  },
+  {
+    "path": "data/assets/asset_0237",
+    "purpose": "cache_dir",
+    "basename": "25fa7df32f51bb6c"
+  },
+  {
+    "path": "data/assets/asset_0238",
+    "purpose": "include_instances",
+    "basename": "rough_lod1_nw_Mississauga_B.txt"
+  },
+  {
+    "path": "data/assets/asset_0239",
+    "purpose": "include_instances",
+    "basename": "rough_lod1_nw_Mississauga_C.txt"
+  },
+  {
+    "path": "data/assets/asset_0240",
+    "purpose": "include_instances",
+    "basename": "image_Montreal_A.txt"
+  },
+  {
+    "path": "data/assets/asset_0241",
+    "purpose": "render_cond",
+    "basename": "renders_cond"
+  },
+  {
+    "path": "data/assets/asset_0242",
+    "purpose": "alpha_mask_root",
+    "basename": "Montreal"
+  },
+  {
+    "path": "data/assets/asset_0243",
+    "purpose": "include_instances",
+    "basename": "image_Montreal_B.txt"
+  },
+  {
+    "path": "data/assets/asset_0244",
+    "purpose": "include_instances",
+    "basename": "image_Montreal_C.txt"
+  },
+  {
+    "path": "data/assets/asset_0245",
+    "purpose": "include_instances",
+    "basename": "both_Montreal_A.txt"
+  },
+  {
+    "path": "data/assets/asset_0246",
+    "purpose": "include_instances",
+    "basename": "both_Montreal_B.txt"
+  },
+  {
+    "path": "data/assets/asset_0247",
+    "purpose": "include_instances",
+    "basename": "rough_cutout_osm_bw_Montreal_A.txt"
+  },
+  {
+    "path": "data/assets/asset_0248",
+    "purpose": "coords_dir",
+    "basename": "ss_occupancy_64_osm_satskylines_gt_height"
+  },
+  {
+    "path": "data/assets/asset_0249",
+    "purpose": "cache_dir",
+    "basename": "1c222d27ed8c77a9"
+  },
+  {
+    "path": "data/assets/asset_0250",
+    "purpose": "include_instances",
+    "basename": "rough_cutout_osm_bw_Montreal_B.txt"
+  },
+  {
+    "path": "data/assets/asset_0251",
+    "purpose": "include_instances",
+    "basename": "rough_cutout_osm_bw_Montreal_C.txt"
+  },
+  {
+    "path": "data/assets/asset_0252",
+    "purpose": "include_instances",
+    "basename": "rough_lod0_bw_Montreal_A.txt"
+  },
+  {
+    "path": "data/assets/asset_0253",
+    "purpose": "coords_dir",
+    "basename": "shape_enc_next_dc_f16c32_fp16_1024"
+  },
+  {
+    "path": "data/assets/asset_0254",
+    "purpose": "cache_dir",
+    "basename": "6b62a85f931498bc"
+  },
+  {
+    "path": "data/assets/asset_0255",
+    "purpose": "include_instances",
+    "basename": "rough_lod0_bw_Montreal_B.txt"
+  },
+  {
+    "path": "data/assets/asset_0256",
+    "purpose": "include_instances",
+    "basename": "rough_lod0_bw_Montreal_C.txt"
+  },
+  {
+    "path": "data/assets/asset_0257",
+    "purpose": "include_instances",
+    "basename": "rough_lod1_bw_Montreal_A.txt"
+  },
+  {
+    "path": "data/assets/asset_0258",
+    "purpose": "cache_dir",
+    "basename": "e18b52e0c7c70229"
+  },
+  {
+    "path": "data/assets/asset_0259",
+    "purpose": "include_instances",
+    "basename": "rough_lod1_bw_Montreal_B.txt"
+  },
+  {
+    "path": "data/assets/asset_0260",
+    "purpose": "include_instances",
+    "basename": "rough_lod1_bw_Montreal_C.txt"
+  },
+  {
+    "path": "data/assets/asset_0261",
+    "purpose": "render_cond",
+    "basename": "renders_cond"
+  },
+  {
+    "path": "data/assets/asset_0262",
+    "purpose": "alpha_mask_root",
+    "basename": "cutout_masks"
+  },
+  {
+    "path": "data/assets/asset_0263",
+    "purpose": "include_instances",
+    "basename": "image_NewYork_A.txt"
+  },
+  {
+    "path": "data/assets/asset_0264",
+    "purpose": "include_instances",
+    "basename": "image_NewYork_B.txt"
+  },
+  {
+    "path": "data/assets/asset_0265",
+    "purpose": "include_instances",
+    "basename": "image_NewYork_C.txt"
+  },
+  {
+    "path": "data/assets/asset_0266",
+    "purpose": "include_instances",
+    "basename": "both_NewYork_A.txt"
+  },
+  {
+    "path": "data/assets/asset_0267",
+    "purpose": "include_instances",
+    "basename": "both_NewYork_B.txt"
+  },
+  {
+    "path": "data/assets/asset_0268",
+    "purpose": "include_instances",
+    "basename": "rough_lod0_nw_NewYork_A.txt"
+  },
+  {
+    "path": "data/assets/asset_0269",
+    "purpose": "coords_dir",
+    "basename": "vox64"
+  },
+  {
+    "path": "data/assets/asset_0270",
+    "purpose": "cache_dir",
+    "basename": "efc21016417ff4e8"
+  },
+  {
+    "path": "data/assets/asset_0271",
+    "purpose": "include_instances",
+    "basename": "rough_lod0_nw_NewYork_B.txt"
+  },
+  {
+    "path": "data/assets/asset_0272",
+    "purpose": "include_instances",
+    "basename": "rough_lod0_nw_NewYork_C.txt"
+  },
+  {
+    "path": "data/assets/asset_0273",
+    "purpose": "include_instances",
+    "basename": "rough_lod1_nw_NewYork_A.txt"
+  },
+  {
+    "path": "data/assets/asset_0274",
+    "purpose": "cache_dir",
+    "basename": "1e6479659f90c9bd"
+  },
+  {
+    "path": "data/assets/asset_0275",
+    "purpose": "include_instances",
+    "basename": "rough_lod1_nw_NewYork_B.txt"
+  },
+  {
+    "path": "data/assets/asset_0276",
+    "purpose": "include_instances",
+    "basename": "rough_lod1_nw_NewYork_C.txt"
+  },
+  {
+    "path": "data/assets/asset_0277",
+    "purpose": "render_cond",
+    "basename": "renders_cond"
+  },
+  {
+    "path": "data/assets/asset_0278",
+    "purpose": "alpha_mask_root",
+    "basename": "cutout_masks"
+  },
+  {
+    "path": "data/assets/asset_0279",
+    "purpose": "include_instances",
+    "basename": "image_Philadelphia_A.txt"
+  },
+  {
+    "path": "data/assets/asset_0280",
+    "purpose": "include_instances",
+    "basename": "image_Philadelphia_B.txt"
+  },
+  {
+    "path": "data/assets/asset_0281",
+    "purpose": "include_instances",
+    "basename": "image_Philadelphia_C.txt"
+  },
+  {
+    "path": "data/assets/asset_0282",
+    "purpose": "include_instances",
+    "basename": "both_Philadelphia_A.txt"
+  },
+  {
+    "path": "data/assets/asset_0283",
+    "purpose": "include_instances",
+    "basename": "both_Philadelphia_B.txt"
+  },
+  {
+    "path": "data/assets/asset_0284",
+    "purpose": "include_instances",
+    "basename": "rough_lod0_nw_Philadelphia_A.txt"
+  },
+  {
+    "path": "data/assets/asset_0285",
+    "purpose": "coords_dir",
+    "basename": "vox64"
+  },
+  {
+    "path": "data/assets/asset_0286",
+    "purpose": "cache_dir",
+    "basename": "5edd6053c1373026"
+  },
+  {
+    "path": "data/assets/asset_0287",
+    "purpose": "include_instances",
+    "basename": "rough_lod0_nw_Philadelphia_B.txt"
+  },
+  {
+    "path": "data/assets/asset_0288",
+    "purpose": "include_instances",
+    "basename": "rough_lod0_nw_Philadelphia_C.txt"
+  },
+  {
+    "path": "data/assets/asset_0289",
+    "purpose": "include_instances",
+    "basename": "rough_lod1_nw_Philadelphia_A.txt"
+  },
+  {
+    "path": "data/assets/asset_0290",
+    "purpose": "cache_dir",
+    "basename": "294ef6a2bc1f3833"
+  },
+  {
+    "path": "data/assets/asset_0291",
+    "purpose": "include_instances",
+    "basename": "rough_lod1_nw_Philadelphia_B.txt"
+  },
+  {
+    "path": "data/assets/asset_0292",
+    "purpose": "include_instances",
+    "basename": "rough_lod1_nw_Philadelphia_C.txt"
+  },
+  {
+    "path": "data/assets/asset_0293",
+    "purpose": "render_cond",
+    "basename": "renders_cond"
+  },
+  {
+    "path": "data/assets/asset_0294",
+    "purpose": "alpha_mask_root",
+    "basename": "cutout_masks"
+  },
+  {
+    "path": "data/assets/asset_0295",
+    "purpose": "include_instances",
+    "basename": "image_SanFrancisco_A.txt"
+  },
+  {
+    "path": "data/assets/asset_0296",
+    "purpose": "include_instances",
+    "basename": "image_SanFrancisco_B.txt"
+  },
+  {
+    "path": "data/assets/asset_0297",
+    "purpose": "include_instances",
+    "basename": "image_SanFrancisco_C.txt"
+  },
+  {
+    "path": "data/assets/asset_0298",
+    "purpose": "include_instances",
+    "basename": "both_SanFrancisco_A.txt"
+  },
+  {
+    "path": "data/assets/asset_0299",
+    "purpose": "include_instances",
+    "basename": "both_SanFrancisco_B.txt"
+  },
+  {
+    "path": "data/assets/asset_0300",
+    "purpose": "include_instances",
+    "basename": "rough_lod0_nw_SanFrancisco_A.txt"
+  },
+  {
+    "path": "data/assets/asset_0301",
+    "purpose": "coords_dir",
+    "basename": "vox64"
+  },
+  {
+    "path": "data/assets/asset_0302",
+    "purpose": "cache_dir",
+    "basename": "e5758167c5f8c483"
+  },
+  {
+    "path": "data/assets/asset_0303",
+    "purpose": "include_instances",
+    "basename": "rough_lod0_nw_SanFrancisco_B.txt"
+  },
+  {
+    "path": "data/assets/asset_0304",
+    "purpose": "include_instances",
+    "basename": "rough_lod0_nw_SanFrancisco_C.txt"
+  },
+  {
+    "path": "data/assets/asset_0305",
+    "purpose": "include_instances",
+    "basename": "rough_lod1_nw_SanFrancisco_A.txt"
+  },
+  {
+    "path": "data/assets/asset_0306",
+    "purpose": "cache_dir",
+    "basename": "9773f0fa296e1c45"
+  },
+  {
+    "path": "data/assets/asset_0307",
+    "purpose": "include_instances",
+    "basename": "rough_lod1_nw_SanFrancisco_B.txt"
+  },
+  {
+    "path": "data/assets/asset_0308",
+    "purpose": "include_instances",
+    "basename": "rough_lod1_nw_SanFrancisco_C.txt"
+  },
+  {
+    "path": "data/assets/asset_0309",
+    "purpose": "include_instances",
+    "basename": "image_Tokoy_A.txt"
+  },
+  {
+    "path": "data/assets/asset_0310",
+    "purpose": "render_cond",
+    "basename": "renders_cond"
+  },
+  {
+    "path": "data/assets/asset_0311",
+    "purpose": "alpha_mask_root",
+    "basename": "Tokoy"
+  },
+  {
+    "path": "data/assets/asset_0312",
+    "purpose": "include_instances",
+    "basename": "image_Tokoy_B.txt"
+  },
+  {
+    "path": "data/assets/asset_0313",
+    "purpose": "include_instances",
+    "basename": "image_Tokoy_C.txt"
+  },
+  {
+    "path": "data/assets/asset_0314",
+    "purpose": "include_instances",
+    "basename": "both_Tokoy_A.txt"
+  },
+  {
+    "path": "data/assets/asset_0315",
+    "purpose": "include_instances",
+    "basename": "both_Tokoy_B.txt"
+  },
+  {
+    "path": "data/assets/asset_0316",
+    "purpose": "include_instances",
+    "basename": "rough_cutout_osm_bw_Tokoy_A.txt"
+  },
+  {
+    "path": "data/assets/asset_0317",
+    "purpose": "coords_dir",
+    "basename": "ss_occupancy_64_osm_satskylines_gt_height"
+  },
+  {
+    "path": "data/assets/asset_0318",
+    "purpose": "cache_dir",
+    "basename": "381298acddf20088"
+  },
+  {
+    "path": "data/assets/asset_0319",
+    "purpose": "include_instances",
+    "basename": "rough_cutout_osm_bw_Tokoy_B.txt"
+  },
+  {
+    "path": "data/assets/asset_0320",
+    "purpose": "include_instances",
+    "basename": "rough_cutout_osm_bw_Tokoy_C.txt"
+  },
+  {
+    "path": "data/assets/asset_0321",
+    "purpose": "include_instances",
+    "basename": "rough_lod0_bw_Tokoy_A.txt"
+  },
+  {
+    "path": "data/assets/asset_0322",
+    "purpose": "coords_dir",
+    "basename": "shape_enc_next_dc_f16c32_fp16_1024"
+  },
+  {
+    "path": "data/assets/asset_0323",
+    "purpose": "cache_dir",
+    "basename": "66c664622d755d34"
+  },
+  {
+    "path": "data/assets/asset_0324",
+    "purpose": "include_instances",
+    "basename": "rough_lod0_bw_Tokoy_B.txt"
+  },
+  {
+    "path": "data/assets/asset_0325",
+    "purpose": "include_instances",
+    "basename": "rough_lod0_bw_Tokoy_C.txt"
+  },
+  {
+    "path": "data/assets/asset_0326",
+    "purpose": "include_instances",
+    "basename": "rough_lod1_bw_Tokoy_A.txt"
+  },
+  {
+    "path": "data/assets/asset_0327",
+    "purpose": "cache_dir",
+    "basename": "83fea1b30749f0ec"
+  },
+  {
+    "path": "data/assets/asset_0328",
+    "purpose": "include_instances",
+    "basename": "rough_lod1_bw_Tokoy_B.txt"
+  },
+  {
+    "path": "data/assets/asset_0329",
+    "purpose": "include_instances",
+    "basename": "rough_lod1_bw_Tokoy_C.txt"
+  },
+  {
+    "path": "data/assets/asset_0330",
+    "purpose": "render_cond",
+    "basename": "renders_cond"
+  },
+  {
+    "path": "data/assets/asset_0331",
+    "purpose": "alpha_mask_root",
+    "basename": "cutout_masks"
+  },
+  {
+    "path": "data/assets/asset_0332",
+    "purpose": "include_instances",
+    "basename": "image_Toronto_A.txt"
+  },
+  {
+    "path": "data/assets/asset_0333",
+    "purpose": "include_instances",
+    "basename": "image_Toronto_B.txt"
+  },
+  {
+    "path": "data/assets/asset_0334",
+    "purpose": "include_instances",
+    "basename": "image_Toronto_C.txt"
+  },
+  {
+    "path": "data/assets/asset_0335",
+    "purpose": "include_instances",
+    "basename": "both_Toronto_A.txt"
+  },
+  {
+    "path": "data/assets/asset_0336",
+    "purpose": "include_instances",
+    "basename": "both_Toronto_B.txt"
+  },
+  {
+    "path": "data/assets/asset_0337",
+    "purpose": "include_instances",
+    "basename": "rough_lod0_nw_Toronto_A.txt"
+  },
+  {
+    "path": "data/assets/asset_0338",
+    "purpose": "coords_dir",
+    "basename": "vox64"
+  },
+  {
+    "path": "data/assets/asset_0339",
+    "purpose": "cache_dir",
+    "basename": "7fa03308831a37ea"
+  },
+  {
+    "path": "data/assets/asset_0340",
+    "purpose": "include_instances",
+    "basename": "rough_lod0_nw_Toronto_B.txt"
+  },
+  {
+    "path": "data/assets/asset_0341",
+    "purpose": "include_instances",
+    "basename": "rough_lod0_nw_Toronto_C.txt"
+  },
+  {
+    "path": "data/assets/asset_0342",
+    "purpose": "include_instances",
+    "basename": "rough_lod1_nw_Toronto_A.txt"
+  },
+  {
+    "path": "data/assets/asset_0343",
+    "purpose": "cache_dir",
+    "basename": "d4a780d6eac8d700"
+  },
+  {
+    "path": "data/assets/asset_0344",
+    "purpose": "include_instances",
+    "basename": "rough_lod1_nw_Toronto_B.txt"
+  },
+  {
+    "path": "data/assets/asset_0345",
+    "purpose": "include_instances",
+    "basename": "rough_lod1_nw_Toronto_C.txt"
+  },
+  {
+    "path": "data/assets/asset_0346",
+    "purpose": "include_instances",
+    "basename": "image_Wellington_A.txt"
+  },
+  {
+    "path": "data/assets/asset_0347",
+    "purpose": "render_cond",
+    "basename": "renders_cond"
+  },
+  {
+    "path": "data/assets/asset_0348",
+    "purpose": "alpha_mask_root",
+    "basename": "Wellington"
+  },
+  {
+    "path": "data/assets/asset_0349",
+    "purpose": "include_instances",
+    "basename": "image_Wellington_B.txt"
+  },
+  {
+    "path": "data/assets/asset_0350",
+    "purpose": "include_instances",
+    "basename": "image_Wellington_C.txt"
+  },
+  {
+    "path": "data/assets/asset_0351",
+    "purpose": "include_instances",
+    "basename": "both_Wellington_A.txt"
+  },
+  {
+    "path": "data/assets/asset_0352",
+    "purpose": "include_instances",
+    "basename": "both_Wellington_B.txt"
+  },
+  {
+    "path": "data/assets/asset_0353",
+    "purpose": "include_instances",
+    "basename": "rough_cutout_osm_bw_Wellington_A.txt"
+  },
+  {
+    "path": "data/assets/asset_0354",
+    "purpose": "coords_dir",
+    "basename": "ss_occupancy_64_osm_satskylines_gt_height"
+  },
+  {
+    "path": "data/assets/asset_0355",
+    "purpose": "cache_dir",
+    "basename": "65d5f37258606e10"
+  },
+  {
+    "path": "data/assets/asset_0356",
+    "purpose": "include_instances",
+    "basename": "rough_cutout_osm_bw_Wellington_B.txt"
+  },
+  {
+    "path": "data/assets/asset_0357",
+    "purpose": "include_instances",
+    "basename": "rough_cutout_osm_bw_Wellington_C.txt"
+  },
+  {
+    "path": "data/assets/asset_0358",
+    "purpose": "include_instances",
+    "basename": "rough_lod0_bw_Wellington_A.txt"
+  },
+  {
+    "path": "data/assets/asset_0359",
+    "purpose": "coords_dir",
+    "basename": "shape_enc_next_dc_f16c32_fp16_1024"
+  },
+  {
+    "path": "data/assets/asset_0360",
+    "purpose": "cache_dir",
+    "basename": "a2b420528b2c0bc8"
+  },
+  {
+    "path": "data/assets/asset_0361",
+    "purpose": "include_instances",
+    "basename": "rough_lod0_bw_Wellington_B.txt"
+  },
+  {
+    "path": "data/assets/asset_0362",
+    "purpose": "include_instances",
+    "basename": "rough_lod0_bw_Wellington_C.txt"
+  },
+  {
+    "path": "data/assets/asset_0363",
+    "purpose": "include_instances",
+    "basename": "rough_lod1_bw_Wellington_A.txt"
+  },
+  {
+    "path": "data/assets/asset_0364",
+    "purpose": "cache_dir",
+    "basename": "ca72ec03352a1db3"
+  },
+  {
+    "path": "data/assets/asset_0365",
+    "purpose": "include_instances",
+    "basename": "rough_lod1_bw_Wellington_B.txt"
+  },
+  {
+    "path": "data/assets/asset_0366",
+    "purpose": "include_instances",
+    "basename": "rough_lod1_bw_Wellington_C.txt"
+  },
+  {
+    "path": "data/assets/asset_0367",
+    "purpose": "render_cond",
+    "basename": "renders_cond"
+  },
+  {
+    "path": "data/assets/asset_0368",
+    "purpose": "alpha_mask_root",
+    "basename": "cutout_masks"
+  },
+  {
+    "path": "data/assets/asset_0369",
+    "purpose": "include_instances",
+    "basename": "image_Yarra_A.txt"
+  },
+  {
+    "path": "data/assets/asset_0370",
+    "purpose": "include_instances",
+    "basename": "image_Yarra_B.txt"
+  },
+  {
+    "path": "data/assets/asset_0371",
+    "purpose": "include_instances",
+    "basename": "image_Yarra_C.txt"
+  },
+  {
+    "path": "data/assets/asset_0372",
+    "purpose": "include_instances",
+    "basename": "both_Yarra_A.txt"
+  },
+  {
+    "path": "data/assets/asset_0373",
+    "purpose": "include_instances",
+    "basename": "both_Yarra_B.txt"
+  },
+  {
+    "path": "data/assets/asset_0374",
+    "purpose": "include_instances",
+    "basename": "rough_lod0_nw_Yarra_A.txt"
+  },
+  {
+    "path": "data/assets/asset_0375",
+    "purpose": "coords_dir",
+    "basename": "vox64"
+  },
+  {
+    "path": "data/assets/asset_0376",
+    "purpose": "cache_dir",
+    "basename": "43ced0c78d85e83d"
+  },
+  {
+    "path": "data/assets/asset_0377",
+    "purpose": "include_instances",
+    "basename": "rough_lod0_nw_Yarra_B.txt"
+  },
+  {
+    "path": "data/assets/asset_0378",
+    "purpose": "include_instances",
+    "basename": "rough_lod0_nw_Yarra_C.txt"
+  },
+  {
+    "path": "data/assets/asset_0379",
+    "purpose": "include_instances",
+    "basename": "rough_lod1_nw_Yarra_A.txt"
+  },
+  {
+    "path": "data/assets/asset_0380",
+    "purpose": "cache_dir",
+    "basename": "76c646fd5b1d9a31"
+  },
+  {
+    "path": "data/assets/asset_0381",
+    "purpose": "include_instances",
+    "basename": "rough_lod1_nw_Yarra_B.txt"
+  },
+  {
+    "path": "data/assets/asset_0382",
+    "purpose": "include_instances",
+    "basename": "rough_lod1_nw_Yarra_C.txt"
+  },
+  {
+    "path": "data/assets/asset_0383",
+    "purpose": "base",
+    "basename": "trellis2_skylines_50k"
+  },
+  {
+    "path": "data/assets/asset_0384",
+    "purpose": "ss_latent",
+    "basename": "ss_enc_conv3d_16l8_fp16_64_true1024"
+  },
+  {
+    "path": "data/assets/asset_0385",
+    "purpose": "render_cond",
+    "basename": "renders_cond_top_tight"
+  },
+  {
+    "path": "data/assets/asset_0386",
+    "purpose": "include_instances",
+    "basename": "skylines_image_strict.txt"
+  },
+  {
+    "path": "data/assets/asset_0387",
+    "purpose": "include_instances",
+    "basename": "restored_rough_skylines_lod0_cuboid.txt"
+  },
+  {
+    "path": "data/assets/asset_0388",
+    "purpose": "coords_dir",
+    "basename": "priors_lod0_cuboid_64"
+  },
+  {
+    "path": "data/assets/asset_0389",
+    "purpose": "cache_dir",
+    "basename": "d642933ae84a5d45"
+  },
+  {
+    "path": "data/assets/asset_0390",
+    "purpose": "include_instances",
+    "basename": "restored_rough_skylines_lod1_1section.txt"
+  },
+  {
+    "path": "data/assets/asset_0391",
+    "purpose": "coords_dir",
+    "basename": "priors_lod1_1section_64"
+  },
+  {
+    "path": "data/assets/asset_0392",
+    "purpose": "cache_dir",
+    "basename": "aee5f886317e0566"
+  },
+  {
+    "path": "data/assets/asset_0393",
+    "purpose": "include_instances",
+    "basename": "restored_rough_skylines_lod2_2section.txt"
+  },
+  {
+    "path": "data/assets/asset_0394",
+    "purpose": "coords_dir",
+    "basename": "priors_lod2_2section_64"
+  },
+  {
+    "path": "data/assets/asset_0395",
+    "purpose": "cache_dir",
+    "basename": "78596108c3ecc16f"
+  },
+  {
+    "path": "data/assets/asset_0396",
+    "purpose": "runtime_dir",
+    "basename": "quality_runtime"
+  }
+]

@@ -1,0 +1,44 @@
+{
+  "conditioner": {
+    "point": {
+      "max_abs_diff": 0.0,
+      "shape": [
+        1,
+        5120,
+        1024
+      ],
+      "equal": true
+    },
+    "image": {
+      "max_abs_diff": 0.0,
+      "shape": [
+        1,
+        5125,
+        1024
+      ],
+      "equal": true
+    },
+    "both": {
+      "max_abs_diff": 0.0,
+      "shape": [
+        1,
+        5120,
+        1024
+      ],
+      "equal": true
+    },
+    "image_prior": {
+      "max_abs_diff": 0.0,
+      "shape": [
+        1,
+        5125,
+        1024
+      ],
+      "equal": true
+    }
+  },
+  "flow": {
+    "max_abs_diff": 0.0,
+    "equal": true
+  }
+}

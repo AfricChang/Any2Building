@@ -1,0 +1,65 @@
+[
+  {
+    "id": "point_01",
+    "mode": "point",
+    "points": "examples/point_01/points.npz",
+    "paper_panel": "Main qualitative A, row 1",
+    "dataset_case": "Adelaide_15_12",
+    "coordinate_frame": "XYZ, already normalized to [-0.5,0.5]; no second normalization",
+    "input_sha256": {
+      "points": "9f654058e8f05aa2d5fff96fccd776b88ae5d6b4c04cf962c5854a90cef69a62"
+    }
+  },
+  {
+    "id": "point_02",
+    "mode": "point",
+    "points": "examples/point_02/points.npz",
+    "paper_panel": "Main qualitative A, row 2",
+    "dataset_case": "Wellington_1010",
+    "coordinate_frame": "XYZ, already normalized to [-0.5,0.5]; no second normalization",
+    "input_sha256": {
+      "points": "7eb24c73285634ba4c7cb19dd010e691068998948da36214ac60d79833f494d4"
+    }
+  },
+  {
+    "id": "point_03",
+    "mode": "point",
+    "points": "examples/point_03/points.npz",
+    "paper_panel": "Main qualitative A, row 3",
+    "dataset_case": "Tokoy_12773",
+    "coordinate_frame": "XYZ, already normalized to [-0.5,0.5]; no second normalization",
+    "input_sha256": {
+      "points": "0d849375f35f9d234099407adc40b142f9340bb8119e1e747ba74d76576fd8fc"
+    }
+  },
+  {
+    "id": "image_01",
+    "mode": "image",
+    "image": "examples/image_01/image.png",
+    "paper_panel": "Main qualitative B, row 1",
+    "dataset_case": "calgary_bldg_56529",
+    "input_sha256": {
+      "image": "3ceb3369d813caaeb0430435a26605cfb28fd94f75b9835bbfc11a3a418ddbe6"
+    }
+  },
+  {
+    "id": "image_02",
+    "mode": "image",
+    "image": "examples/image_02/image.png",
+    "paper_panel": "Main qualitative B, row 2",
+    "dataset_case": "adelaide_CBAE2_15",
+    "input_sha256": {
+      "image": "69f020a81039873563f676f77097fc081445be34da6448a57aebc17a58db5a77"
+    }
+  },
+  {
+    "id": "image_03",
+    "mode": "image",
+    "image": "examples/image_03/image.png",
+    "paper_panel": "Main qualitative B, row 3",
+    "dataset_case": "hongkong_B428161812301063A0",
+    "input_sha256": {
+      "image": "9070835e868553deabeb1a38c9cdc411e183c5362a1c0883aa242900d2ea8ae4"
+    }
+  }
+]

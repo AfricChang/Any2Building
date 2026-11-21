@@ -1,0 +1,9 @@
+{
+  "success": true,
+  "pipeline_weight_paths": "match manifest",
+  "training_entry_scenarios": 7,
+  "new_runs_start_at_zero": true,
+  "finetune_geometry_full_weight": true,
+  "scratch_warmup_restored_on_resume": true,
+  "validation_scope": "CLI and configuration wiring with model/trainer doubles; no new GPU execution."
+}

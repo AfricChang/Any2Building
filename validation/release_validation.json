@@ -1,0 +1,11 @@
+{
+  "artifact": "Any2Building research code and examples",
+  "example_cases": 6,
+  "runtime_validation": "runtime_validation.json",
+  "runtime_validation_scope": "Earlier GPU checks of structure inference, training, checkpoint resume and surface generation in a compatible CUDA environment.",
+  "package_checks": "Run python tools/validate_release.py --hashes; use --weights to verify downloaded models.",
+  "example_outputs_included": false,
+  "training_fixtures_included": false,
+  "example_contents": "Three point-cloud NPZ inputs and three single-image PNG inputs.",
+  "model_weights_url": "https://huggingface.co/hongye02/Any2Building"
+}

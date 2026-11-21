@@ -1,0 +1,35 @@
+{
+  "point_01": {
+    "same_points": true,
+    "shape": [
+      16384,
+      3
+    ]
+  },
+  "point_02": {
+    "same_points": true,
+    "shape": [
+      16384,
+      3
+    ]
+  },
+  "point_03": {
+    "same_points": true,
+    "shape": [
+      16384,
+      3
+    ]
+  },
+  "image_01": {
+    "same_pixels": true,
+    "metadata_keys": []
+  },
+  "image_02": {
+    "same_pixels": true,
+    "metadata_keys": []
+  },
+  "image_03": {
+    "same_pixels": true,
+    "metadata_keys": []
+  }
+}

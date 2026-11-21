@@ -1,0 +1,160 @@
+{
+  "artifact": "Any2Building research release",
+  "checks": {
+    "source_weight_tensor_equality": true,
+    "distributed_weight_sha256": true,
+    "private_path_scan": true,
+    "weight_metadata_scan": true,
+    "python_syntax": true,
+    "example_input_array_pixel_identity": true,
+    "example_count": 6,
+    "structure_inference": {
+      "successful_cases": 6,
+      "steps": 50,
+      "guidance": 3,
+      "seed": 42,
+      "variant": "EMA0.9999"
+    },
+    "numerical_parity": {
+      "conditioner": {
+        "point": {
+          "max_abs_diff": 0.0,
+          "shape": [
+            1,
+            5120,
+            1024
+          ],
+          "equal": true
+        },
+        "image": {
+          "max_abs_diff": 0.0,
+          "shape": [
+            1,
+            5125,
+            1024
+          ],
+          "equal": true
+        },
+        "both": {
+          "max_abs_diff": 0.0,
+          "shape": [
+            1,
+            5120,
+            1024
+          ],
+          "equal": true
+        },
+        "image_prior": {
+          "max_abs_diff": 0.0,
+          "shape": [
+            1,
+            5125,
+            1024
+          ],
+          "equal": true
+        }
+      },
+      "flow": {
+        "max_abs_diff": 0.0,
+        "equal": true
+      }
+    },
+    "structure_training": {
+      "initialization": "Structure raw weights, new optimizer",
+      "resume_completed": {
+        "values": {
+          "time": {
+            "step": 3.9997503757476807,
+            "elapsed": 3.9997503757476807
+          },
+          "loss": {
+            "mse": 0.03024427592754364,
+            "loss": 0.05033265799283981,
+            "bin_4": {
+              "mse": 0.03024427592754364
+            },
+            "query_occ": 0.19961491227149963,
+            "query_occ_point": 0.19961491227149963,
+            "output_geometry": 0.006344616878777742,
+            "output_bce": 0.01999879814684391,
+            "output_dice": 0.0016970038414001465,
+            "output_geometry_scale": 0.02
+          },
+          "status": {
+            "grad_norm": 0.9234293699264526
+          },
+          "grad_clip": {
+            "max_norm": 1.0
+          }
+        },
+        "updates_after_initialization": 2
+      },
+      "checkpoint_components": [
+        "model",
+        "EMA",
+        "optimizer",
+        "sampler"
+      ],
+      "updates_completed_after_initialization": 1,
+      "resume_after_updates": 1
+    },
+    "surface_training": {
+      "initialization": "Surface EMA, new optimizer",
+      "completed": {
+        "values": {
+          "time": {
+            "step": 9.171066999435425,
+            "elapsed": 9.171066999435425
+          },
+          "loss": {
+            "mse": 0.04134984314441681,
+            "loss": 0.04134984314441681,
+            "bin_3": {
+              "mse": 0.04134984314441681
+            }
+          },
+          "status": {
+            "grad_norm": 0.13614390790462494
+          },
+          "grad_clip": {
+            "max_norm": 1.0
+          }
+        },
+        "updates_after_initialization": 1
+      }
+    },
+    "surface_inference": {
+      "model": "Any2Building voxel-conditional surface generator",
+      "weights": "Surface EMA",
+      "steps": 50,
+      "seed": 42,
+      "guidance": 3.0,
+      "occupancy_sha256": "422264fbd0338e11c4fecf7b55d8c0e5242026c86878a25619d6d4ba6478bae4",
+      "occupied": 9026,
+      "vertices": 2767292,
+      "faces": 5568658,
+      "conditioning": "Predicted occupied surface cells only; no image, point tokens, filled interiors, or GT support"
+    },
+    "remeshing_adapter": {
+      "tested": true,
+      "runtime": "Wine through Singularity",
+      "input": "procedural box",
+      "output": "valid nonempty OBJ",
+      "screen_size": 100
+    }
+  },
+  "environment": {
+    "python": "3.10",
+    "torch": "2.6.0+cu124",
+    "transformers": "4.57.1",
+    "flash-attn": "2.7.3",
+    "mixed_precision": "bfloat16"
+  },
+  "not_exercised": [
+    "Fresh dependency installation",
+    "Multi-GPU training",
+    "Full historical training-corpus replay"
+  ],
+  "scope": "Single-step training/resume checks validate execution, not convergence or paper metrics. Archived display references are distinguished from fresh model outputs.",
+  "step_reporting": "Historical runtime results are preserved; training counters are reported as updates relative to initialization. These are not new GPU runs of the current entry points."
+}

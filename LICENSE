@@ -1,0 +1,77 @@
+Scope for Any2Building
+
+This license applies to original Any2Building contributions only. Identified third-party code, assets, data and model dependencies retain their own licenses and ownership. Nothing below overrides those third-party terms or claims ownership of those components. See THIRD_PARTY.md.
+
+AI4City Technology License v1.0
+
+Copyright (c) 2026 AI4City Lab, HKUST(GZ)
+All rights reserved.
+
+1. Ownership
+
+This software and all associated intellectual property rights,
+including but not limited to copyrights, patents, trade secrets,
+and know-how, are and shall remain the exclusive property of
+AI4City Lab, HKUST(GZ).
+
+2. Limited License Grant
+
+Subject to the terms of this License, permission is granted
+solely for non-commercial academic research and internal
+evaluation purposes.
+
+No rights are granted for commercial use, production deployment,
+or incorporation into products or services.
+
+3. Prohibited Commercial Activities
+
+Without prior written authorization from AI4City Lab,
+the following activities are strictly prohibited:
+
+- Use in any commercial or for-profit environment
+- Integration into commercial products or platforms
+- Deployment as part of paid services (including SaaS)
+- Model hosting, API serving, or cloud-based monetization
+- Use by corporations for internal business operations
+- Redistribution for commercial advantage
+
+4. Derivative Works
+
+Modifications and derivative works are permitted only
+for non-commercial academic research purposes.
+
+Any commercial exploitation of derivative works
+requires separate written licensing.
+
+5. Patent and Technology Rights
+
+No patent rights, technology transfer rights, or
+implied licenses are granted under this agreement.
+
+Use of this software does not grant any right
+to practice patented inventions owned by AI4City Lab.
+
+6. No Commercial Circumvention
+
+Any attempt to bypass the non-commercial restriction
+through indirect monetization, third-party deployment,
+or affiliated entities shall constitute a violation
+of this license.
+
+7. Attribution
+
+Academic publications using this software must
+properly cite the associated research paper.
+
+8. Disclaimer of Warranty
+
+This software is provided "as is", without warranty
+of any kind. In no event shall the authors or
+AI4City Lab be liable for any damages.
+
+9. Commercial Licensing
+
+For commercial licensing, collaboration, or
+technology transfer inquiries, please contact:
+
+wufanzhao@hkust-gz.edu.cn

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="176" height="176" viewBox="0 0 176 176" role="img" aria-labelledby="title desc">
+<title id="title">National Champion — Grand Prize</title><desc id="desc">An original gold trophy illustration with a number 1 medallion.</desc>
+<defs><linearGradient id="metal" x1="0" x2="1"><stop stop-color="#c5952f"/><stop offset=".28" stop-color="#fff8db"/><stop offset=".55" stop-color="#f2ce6d"/><stop offset="1" stop-color="#c5952f"/></linearGradient><linearGradient id="base" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f2ce6d"/><stop offset="1" stop-color="#906719"/></linearGradient></defs>
+<ellipse cx="88" cy="158" rx="48" ry="7" fill="#1b2a45" opacity=".09"/>
+<path d="M52 42H29v15c0 24 14 38 34 39M124 42h23v15c0 24-14 38-34 39" fill="none" stroke="#906719" stroke-width="11" stroke-linecap="round"/><path d="M52 40H29v15c0 24 14 38 34 39M124 40h23v15c0 24-14 38-34 39" fill="none" stroke="#f2ce6d" stroke-width="6" stroke-linecap="round"/>
+<path d="M47 30h82l-5 42c-2 22-16 39-36 39S54 94 52 72z" fill="url(#metal)" stroke="#906719" stroke-width="2"/>
+<rect x="44" y="27" width="88" height="9" rx="4.5" fill="#f2ce6d" stroke="#906719" stroke-width="1.5"/>
+<path d="M80 108h16v20l13 8H67l13-8z" fill="url(#metal)" stroke="#906719" stroke-width="1.5"/>
+<rect x="59" y="135" width="58" height="10" rx="3" fill="url(#base)"/><rect x="52" y="145" width="72" height="10" rx="3" fill="#283a54"/>
+<circle cx="88" cy="69" r="20" fill="#fff8db" fill-opacity=".85" stroke="#c5952f" stroke-width="2"/><text x="88" y="81" text-anchor="middle" font-family="Arial,sans-serif" font-size="34" font-weight="700" fill="#906719">1</text>
+<path d="m142 17 2 7 7 2-7 2-2 7-2-7-7-2 7-2z" fill="#c5952f"/><path d="m31 112 1.5 5 5 1.5-5 1.5-1.5 5-1.5-5-5-1.5 5-1.5z" fill="#c5952f"/></svg>

@@ -1,0 +1,16 @@
+{
+  "name": "BuildingWorldImageDataset",
+  "args": {
+    "min_aesthetic_score": 4.5,
+    "image_size": 512,
+    "point_cond_root": "partial_xyz",
+    "point_sample_size": 16384,
+    "normalize_points": true,
+    "normalize_padding": 0.001,
+    "sparse_point_manifest": "data/sparse_point_manifest.txt",
+    "sparse_point_ratio": 0.2,
+    "pretrained_ss_dec": "weights/structure_decoder/model",
+    "quality_plan": "configs/reference_sampling_plan.json",
+    "rough_grid": 16
+  }
+}

@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Any2Building unifies point clouds and images for building reconstruction via shared spatial queries. Research code, examples, and project updates from AI4City Lab.">
+  <meta name="theme-color" content="#ffffff">
+  <title>Any2Building · Shared Spatial Queries for Building Reconstruction</title>
+  <link rel="icon" href="assets/trophy-gold.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <nav class="topbar" aria-label="Main navigation">
+    <a class="lab-link" href="https://github.com/ai4city-hkust">AI4City <span>· HKUST(GZ)</span></a>
+    <div class="nav-links"><a href="#news">News</a><a href="#method">Method</a><a href="#code">Code</a><a href="#commercial">Commercial use</a></div>
+  </nav>
+  <main id="main">
+    <header class="hero container">
+      <p class="eyebrow">MULTIMODAL BUILDING RECONSTRUCTION</p>
+      <h1><span class="wordmark">Any2Building</span><span class="paper-title">Unifying Point Clouds and Images for Building Reconstruction<br class="wide-only"> via Shared Spatial Queries</span></h1>
+      <p class="authors">Hongye Hou et al.</p>
+      <p class="affiliation">AI4City Lab · The Hong Kong University of Science and Technology (Guangzhou)</p>
+      <div class="hero-links">
+        <a class="button primary" href="https://github.com/HenryHoou/Any2Building"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5 1 12l7 7m8-14 7 7-7 7M14 3l-4 18"/></svg>Code</a>
+        <a class="button" href="https://huggingface.co/hongye02/Any2Building">Hugging Face</a>
+        <a class="button" href="#method">Explore the method</a>
+        <a class="button" href="#code">Get started</a>
+      </div>
+      <p class="hero-note">One model for points, images, and both.</p>
+      <figure class="teaser"><a href="https://huggingface.co/hongye02/Any2Building" aria-label="View Any2Building on Hugging Face"><img src="assets/teaser-paper.webp" width="3480" height="1512" alt="Any2Building: one model for airborne LiDAR points, images with sparse points, remote-sensing images, and images with geometric priors."></a><figcaption>One model, four observation settings for LoD2 building reconstruction. <a href="https://huggingface.co/hongye02/Any2Building">View on Hugging Face</a>.</figcaption></figure>
+    </header>
+
+    <section id="news" class="container section news-section" aria-labelledby="news-heading">
+      <div class="section-heading"><p class="eyebrow">MILESTONES</p><h2 id="news-heading">News</h2></div>
+      <article class="award"><img src="assets/trophy-gold.svg" width="112" height="112" alt="Gold champion trophy, first place"><div><p class="award-date"><time datetime="2026-11-01">November 1, 2026</time><span class="new-badge">NEW</span></p><h3>National Champion · Grand Prize</h3><p>LoD2 Building Reconstruction Track<br>National LiDAR Point Cloud Conference</p><p class="award-zh" lang="zh-CN">全国激光雷达点云大会 LoD2 Building 重建赛道<br>全国冠军 · 特等奖</p></div></article>
+      <article class="award"><img src="assets/trophy-silver.svg" width="112" height="112" alt="Silver runner-up trophy, second place"><div><p class="award-date"><time datetime="2026-06">June 2026</time></p><h3>Runner-up · 2nd Place</h3><p>BuildingWorld Workshop</p><p class="award-zh" lang="zh-CN">BuildingWorld Workshop · <span class="no-wrap">亚军</span></p></div></article>
+    </section>
+
+    <section class="overview-band"><div class="container section overview"><div class="section-heading"><p class="eyebrow">THE IDEA</p><h2>One spatial language.<br> Multiple ways to observe.</h2></div><div class="overview-copy"><p>Point clouds offer explicit geometry. Images offer rich visual cues. Any2Building brings these complementary observations into a common 3D reference through <strong>shared spatial queries</strong>.</p><p>Point and image features are read into a shared query lattice, supervised by occupancy, and used to guide building generation. The same framework supports point clouds, single images, and their combinations.</p><div class="mode-list" aria-label="Supported input modes"><span>Point cloud</span><span>Single image</span><span>Points + image</span><span>Image + coarse prior</span></div></div></div></section>
+
+    <section id="method" class="container section" aria-labelledby="method-heading">
+      <div class="section-heading centered"><p class="eyebrow">HOW IT WORKS</p><h2 id="method-heading">Shared spatial queries</h2><p>A common 3D interface between observations and the generative model.</p></div>
+      <div class="tabs" role="tablist" aria-label="Method figures"><button type="button" id="tab-pipeline" role="tab" aria-selected="true" aria-controls="panel-pipeline" tabindex="0">Unified pipeline</button><button type="button" id="tab-prompts" role="tab" aria-selected="false" aria-controls="panel-prompts" tabindex="-1">Spatial prompts</button></div>
+      <figure class="method-figure" id="panel-pipeline" role="tabpanel" aria-labelledby="tab-pipeline"><img src="assets/pipeline.webp" width="2333" height="1104" loading="lazy" alt="Any2Building pipeline: modality-specific encoders, shared spatial queries, structure generation, and surface generation."><figcaption>Observation encoding → shared spatial queries → structure generation → surface generation.</figcaption></figure>
+      <figure class="method-figure" id="panel-prompts" role="tabpanel" aria-labelledby="tab-prompts" hidden><img src="assets/spatial-prompt.webp" width="1651" height="987" loading="lazy" alt="Shared spatial query features provide spatial prompts to the structure diffusion transformer."><figcaption>Spatially aligned query features guide the structure model through query readback and spatial prompts.</figcaption></figure>
+      <div class="method-steps"><article><span class="step-number">01</span><h3>Encode observations</h3><p>An EdgeConv point tokenizer and a frozen DINOv3 image encoder extract features from the available input.</p></article><article><span class="step-number">02</span><h3>Align in 3D</h3><p>A 16 × 16 × 16 lattice of shared queries organizes the features in space, with occupancy supervision.</p></article><article><span class="step-number">03</span><h3>Generate geometry</h3><p>The conditioned structure model predicts occupancy. A separate surface model produces geometry, with optional low-poly remeshing.</p></article></div>
+    </section>
+
+    <section class="results-band"><div class="container section"><div class="section-heading centered"><p class="eyebrow">REPORTED IN THE MANUSCRIPT</p><h2>Reconstruction across input modes</h2><p>F-score at 2% for the final low-poly results, under each table's evaluation protocol.</p></div><div class="results-grid"><article><p class="result-value">97.19<span>%</span></p><h3>Point cloud</h3><p>Table 2(a)</p></article><article><p class="result-value">77.41<span>%</span></p><h3>Points + image</h3><p>Table 2(b) · sparse points</p></article><article><p class="result-value">62.82<span>%</span></p><h3>Single image</h3><p>Table 3(a)</p></article><article><p class="result-value">78.64<span>%</span></p><h3>Image + prior</h3><p>Table 3(b)</p></article></div><p class="results-note">The input settings differ between protocols; these values are not a comparison of modalities under identical observations.</p></div></section>
+
+    <section id="code" class="container section code-section" aria-labelledby="code-heading"><div class="section-heading"><p class="eyebrow">RESEARCH CODE</p><h2 id="code-heading">From example to reconstruction</h2><p>Training and inference code, dependencies, and six small input examples.</p></div><div class="code-layout"><div><h3>A compact, reproducible release</h3><p>The repository includes three point-cloud inputs and three single-image inputs. Pretrained models are available on <a href="https://huggingface.co/hongye02/Any2Building">Hugging Face</a>.</p><p>The Any2Building implementation lives in <code>any2building/</code>. Adapted TRELLIS.2 components and other dependencies are identified separately in the third-party notices.</p><div class="text-links"><a href="https://github.com/HenryHoou/Any2Building#installation">Installation &amp; inference</a><a href="https://github.com/HenryHoou/Any2Building/blob/main/docs/TRAINING.md">Training guide</a><a href="https://github.com/HenryHoou/Any2Building/blob/main/THIRD_PARTY.md">Third-party notices</a></div></div><div class="code-block"><div class="code-toolbar"><span>Quick start</span><button type="button" class="copy-button" data-copy="quickstart">Copy</button></div><pre id="quickstart"><code>git clone https://github.com/HenryHoou/Any2Building.git
+cd Any2Building
+
+# Follow the README to install dependencies
+# and download the pretrained models from Hugging Face.
+python infer.py --examples \
+  --outdir outputs/examples</code></pre><p class="code-footnote">See the README for the complete setup and checkpoint paths.</p></div></div></section>
+
+    <section id="commercial" class="commercial-band"><div class="container section commercial"><div class="section-heading"><p class="eyebrow">LICENSE &amp; COMMERCIAL USE</p><h2>Research use.<br> Commercial licensing by agreement.</h2></div><div><p>Original Any2Building code is provided under the <strong>AI4City Technology License v1.0</strong>, following the lab's BuildAnyPoint licensing policy. Non-commercial academic research and internal evaluation are permitted under its terms.</p><p>Commercial use requires prior written authorization. For commercial licensing and collaboration, contact <a href="mailto:wufanzhao@hkust-gz.edu.cn">wufanzhao@hkust-gz.edu.cn</a>.</p><p lang="zh-CN">本项目遵循 AI4City 实验室授权条款。商业使用须事先取得书面授权；商业授权与合作请联系上述邮箱。</p><p class="small-copy">Third-party components retain their respective licenses. Any2Building's license does not override those terms.</p><div class="text-links"><a href="https://github.com/HenryHoou/Any2Building/blob/main/LICENSE">Read the license</a><a href="https://github.com/HenryHoou/Any2Building/blob/main/COMMERCIAL_USE.md">Commercial-use policy</a></div></div></div></section>
+
+    <section class="container section citation-section" aria-labelledby="citation-heading"><div class="section-heading"><p class="eyebrow">REFERENCE</p><h2 id="citation-heading">Citation</h2></div><div class="code-block"><div class="code-toolbar"><span>BibTeX · manuscript</span><button type="button" class="copy-button" data-copy="bibtex">Copy</button></div><pre id="bibtex"><code>@misc{any2building2026,
+  title = {Any2Building: Unifying Point Clouds and Images for
+           Building Reconstruction via Shared Spatial Queries},
+  author = {Hongye Hou and others},
+  year = {2026},
+  note = {Manuscript},
+  url = {https://henryhoou.github.io/Any2Building/}
+}</code></pre></div></section>
+  </main>
+  <footer class="container footer"><p>Any2Building · AI4City Lab · HKUST(GZ)</p><p>Presentation inspired by our lab's <a href="https://ai4city-hkust.github.io/BuildAnyPoint/">BuildAnyPoint</a> project.</p><a href="https://github.com/HenryHoou/Any2Building">View on GitHub</a></footer>
+  <span id="copy-status" class="visually-hidden" role="status" aria-live="polite"></span>
+</body>
+</html>

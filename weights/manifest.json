@@ -1,0 +1,58 @@
+[
+  {
+    "file": "weights/spatial_prompt_dit.pt",
+    "variant": "ema",
+    "sha256": "fc5cbc51a40ccd6a3bf91b8bafd55cb86d744c953e8fde5c582ed04c215be8d3",
+    "bytes": 5196189275,
+    "tensors": 645,
+    "tensor_equal_to_source": true
+  },
+  {
+    "file": "weights/shared_spatial_query_conditioner.pt",
+    "variant": "ema",
+    "sha256": "f8b9a4f0a978780ef3a6cecdacfb679ad0b84e0ba7aa0a497e7c81c339924320",
+    "bytes": 158600466,
+    "tensors": 68,
+    "tensor_equal_to_source": true
+  },
+  {
+    "file": "weights/point_cloud_tokenizer.pt",
+    "variant": "ema",
+    "sha256": "fd0c91ced6f5c2fd8bb32e0366e408ae72d9f598c3d4446bc67d2c90ff16c374",
+    "bytes": 3022272,
+    "tensors": 22,
+    "tensor_equal_to_source": true
+  },
+  {
+    "file": "weights/surface_generator/surface_flow.pt",
+    "variant": "ema",
+    "sha256": "2d86166f52ed9e178185e9e19872259554f5cd7db558a41b38bad8aa521570a0",
+    "bytes": 5169220934,
+    "tensors": 640,
+    "tensor_equal_to_source": true
+  },
+  {
+    "file": "weights/structure_decoder/model.json",
+    "sha256": "646781293f1cda74720de85d1cef50a957fb4aebd9a4bd014e454e32f2330ac5",
+    "bytes": 245,
+    "role": "frozen pretrained decoder"
+  },
+  {
+    "file": "weights/structure_decoder/model.safetensors",
+    "sha256": "1c76d4a40519aa2d711cc263a8404105231ac26db31d946bed48b84fee79009a",
+    "bytes": 147591972,
+    "role": "frozen pretrained decoder"
+  },
+  {
+    "file": "weights/surface_decoder/model.json",
+    "sha256": "5f1b856dffce79466fb18f5f0eefc08f08c673b24b3c05b20359c0b6d318a209",
+    "bytes": 678,
+    "role": "frozen pretrained decoder"
+  },
+  {
+    "file": "weights/surface_decoder/model.safetensors",
+    "sha256": "e3b718d3e43e4f8780e9a24ac6fff231811a67e3b058e336e10fe654c911d581",
+    "bytes": 948490494,
+    "role": "frozen pretrained decoder"
+  }
+]

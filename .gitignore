@@ -1,0 +1,20 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+outputs/
+build/
+dist/
+
+
+# Local model checkpoints
+*.pt
+*.pth
+*.safetensors
+*.ckpt
+*.bin
+*.log
+.env
+.env.*
+/data/
+/runs/
+.cache/

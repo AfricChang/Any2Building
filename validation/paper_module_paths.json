@@ -1,0 +1,14 @@
+{
+  "paper_module_paths": {
+    "spatial_prompt_dit": "weights/spatial_prompt_dit.pt",
+    "shared_spatial_query_conditioner": "weights/shared_spatial_query_conditioner.pt",
+    "point_cloud_tokenizer": "weights/point_cloud_tokenizer.pt",
+    "surface_flow": "weights/surface_generator/surface_flow.pt"
+  },
+  "distributed_variant": "ema",
+  "weight_manifest_entries": 8,
+  "dino_bundled": false,
+  "ast_checked": true,
+  "weight_bytes_unchanged": true,
+  "runtime_note": "Paper-module filenames match the separate EMA weight archive. New training entries use run-relative steps; no new GPU inference is claimed."
+}
