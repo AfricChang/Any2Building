@@ -6,3 +6,12 @@
 @media(prefers-reduced-motion:reduce){:root{scroll-behavior:auto}.button{transition:none}}
 
 .no-wrap{white-space:nowrap}
+
+.showcase{margin:30px auto 0;width:100%}
+.showcase-controls{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin-bottom:14px}
+.showcase-controls button{background:var(--white);font-size:14px;padding:7px 15px}
+.showcase-controls [aria-pressed="true"]{background:#eaf4f4;border-color:#c7dfdf;color:#075f64}
+.showcase-frame{overflow:hidden;border:1px solid var(--line);border-radius:10px;background:white}
+.showcase-frame video,.showcase-frame iframe{display:block;width:100%;border:0}
+.showcase-frame video{aspect-ratio:16/9;background:var(--pale);object-fit:contain}
+.showcase-frame iframe{height:clamp(600px,76vh,900px)}

@@ -19,7 +19,7 @@ This repository provides the **Any2Building training and inference implementatio
 ## News
 
 - <img src="assets/trophy-gold.svg" width="30" alt="Champion trophy"> **2026.11.01** — Our team won **National Champion · Grand Prize** in the **LoD2 Building Reconstruction Track** at the National LiDAR Point Cloud Conference. **全国激光雷达点云大会 LoD2 Building 重建赛道全国冠军、特等奖。**
-- <img src="assets/trophy-silver.svg" width="30" alt="Silver runner-up trophy"> **2026.06** — Our team won **Runner-up (2nd Place)** at the **BuildingWorld Workshop**. **BuildingWorld Workshop 亚军。**
+- <img src="assets/trophy-silver.svg" width="30" alt="Silver runner-up trophy"> **2026.06** — Our team won **Runner-up (2nd Place)** at the **CVPR 2026 BuildingWorld Workshop**. **CVPR 2026 BuildingWorld Workshop 亚军。**
 
 ## Overview
 

@@ -45,3 +45,19 @@ for (const button of document.querySelectorAll('[data-copy]')) {
     window.setTimeout(() => { button.textContent = 'Copy'; }, 2500);
   });
 }
+
+const showcaseButtons = document.querySelectorAll('.showcase-controls button');
+for (const button of showcaseButtons) {
+  button.addEventListener('click', () => {
+    for (const item of showcaseButtons) {
+      const selected = item === button;
+      const panel = document.getElementById(item.getAttribute('aria-controls'));
+      const video = panel.querySelector('video');
+      const frame = panel.querySelector('iframe');
+      if (!selected && video) video.pause();
+      panel.hidden = !selected;
+      item.setAttribute('aria-pressed', String(selected));
+      if (selected && frame && !frame.hasAttribute('src')) frame.src = frame.dataset.src;
+    }
+  });
+}
