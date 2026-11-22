@@ -40,7 +40,7 @@ h1 { font-weight: 600; letter-spacing: -.025em; line-height: 1.24; }
 .filter-group { display: flex; align-items: center; flex-wrap: wrap; gap: 8px 12px; }
 .filter-group > span { font-size: 15px; color: var(--muted); }
 .stage { display: grid; grid-template-columns: minmax(0, .72fr) repeat(2, minmax(0, 1.4fr)); gap: 14px; }
-.refs { display: flex; flex-direction: column; gap: 12px; min-width: 0; }
+.refs { display: flex; flex-direction: column; gap: 12px; min-width: 0; height: clamp(370px, 38vw, 550px); }
 .card { position: relative; height: clamp(370px, 38vw, 550px); overflow: hidden; border: 1px solid var(--line); border-radius: 4px; background: #fff; }
 .refs .card { height: auto; min-height: 0; flex: 1; }
 .card strong { position: absolute; z-index: 1; top: 12px; left: 12px; padding: 2px 8px; background: #fffffff0; color: #303030; font-size: 16px; font-weight: 600; }
@@ -88,7 +88,7 @@ code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
   .filters { justify-content: center; }
   .filter-group { justify-content: center; }
   .stage { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .refs { grid-column: 1 / -1; flex-direction: row; }
+  .refs { grid-column: 1 / -1; flex-direction: row; height: 210px; }
   .refs .card { height: 210px; }
   .card { height: 360px; }
 }
@@ -108,7 +108,7 @@ code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
   .filter-group { flex-direction: column; width: 100%; gap: 6px; }
   .filters { margin-top: 20px; }
   .stage { grid-template-columns: 1fr; gap: 12px; }
-  .refs { gap: 8px; }
+  .refs { gap: 8px; height: 170px; }
   .refs .card { height: 170px; }
   .card { height: 330px; }
   .card strong { top: 8px; left: 6px; font-size: 14px; }
