@@ -1,6 +1,7 @@
 from setuptools import setup
 from torch.utils.cpp_extension import CUDAExtension, BuildExtension, IS_HIP_EXTENSION
 import os
+import platform
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 BUILD_TARGET = os.environ.get("BUILD_TARGET", "auto")
@@ -17,10 +18,21 @@ else:
         IS_HIP = True
 
 if not IS_HIP:
-    cc_flag = []
+    cc_flag = ["-allow-unsupported-compiler"] if platform.system() == "Windows" else []
 else:
     archs = os.getenv("GPU_ARCHS", "native").split(";")
     cc_flag = [f"--offload-arch={arch}" for arch in archs]
+
+if platform.system() == "Windows":
+    extra_compile_args = {
+        "cxx": ["/O2", "/std:c++17", "/EHsc", "/Zc:__cplusplus"],
+        "nvcc": ["-O3", "-std=c++17", "-Xcompiler=/std:c++17", "-Xcompiler=/EHsc", "-Xcompiler=/Zc:__cplusplus"] + cc_flag,
+    }
+else:
+    extra_compile_args = {
+        "cxx": ["-O3", "-std=c++17"],
+        "nvcc": ["-O3", "-std=c++17"] + cc_flag,
+    }
 
 setup(
     name="o_voxel",
@@ -55,10 +67,7 @@ setup(
             include_dirs=[
                 os.path.join(ROOT, "third_party/eigen"),
             ],
-            extra_compile_args={
-                "cxx": ["-O3", "-std=c++17"],
-                "nvcc": ["-O3","-std=c++17"] + cc_flag,
-            }
+            extra_compile_args=extra_compile_args
         )
     ],
     cmdclass={
