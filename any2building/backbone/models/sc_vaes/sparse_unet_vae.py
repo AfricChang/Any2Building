@@ -490,7 +490,10 @@ class SparseUnetVaeDecoder(nn.Module):
                         if self.training:
                             subs_gt.append(h.get_spatial_cache('subdivision'))
                         h, sub = block(h)
-                        subs.append(sub)
+                        if self.training or return_subs:
+                            subs.append(sub)
+                        else:
+                            del sub
                     else:
                         h = block(h, subdiv=guide_subs[i] if guide_subs is not None else None)
                 else:
