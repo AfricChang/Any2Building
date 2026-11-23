@@ -18,3 +18,6 @@ dist/
 /data/
 /runs/
 .cache/
+.venv/
+bin/
+weights/image_tokenizer/
