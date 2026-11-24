@@ -61,12 +61,20 @@ def sample_surface_points(v: np.ndarray, f: np.ndarray, n_points: int, seed: int
     return pts
 
 
+def subdivide_mesh(v: np.ndarray, f: np.ndarray, max_edge: float, max_iter: int = 6):
+    """Subdivide triangles until all edges are <= max_edge (in mesh units, meters)."""
+    import trimesh
+    vs, fs = trimesh.remesh.subdivide_to_size(v, f, max_edge=max_edge, max_iter=max_iter)
+    return np.asarray(vs, dtype=np.float64), np.asarray(fs, dtype=np.int64)
+
+
 def sample_lidar_clean_points(
     v: np.ndarray,
     f: np.ndarray,
     footprint_path: Path,
     n_points: int,
     seed: int = 42,
+    densified: bool = False,
 ):
     """Simulate clean airborne LiDAR from an oblique photogrammetry mesh + surveyed footprint.
 
@@ -93,7 +101,13 @@ def sample_lidar_clean_points(
     if up_mask.sum() < 10:
         up_mask = (areas > 1e-12) & (nz > 0.0)
     up_f = f[up_mask]
-    cand_pts = sample_surface_points(v, up_f, n_points=120000, seed=seed)
+    if densified:
+        # Include subdivided upward vertices directly + denser surface sampling
+        up_verts = v[np.unique(up_f)]
+        surf_cand = sample_surface_points(v, up_f, n_points=300000, seed=seed)
+        cand_pts = np.vstack([up_verts, surf_cand])
+    else:
+        cand_pts = sample_surface_points(v, up_f, n_points=120000, seed=seed)
     # Keep points above ground + small margin (avoid ground strips inside roof mask)
     min_roof_z = z_ground + 0.08 * (z_top - z_ground)
     roof_cand = cand_pts[cand_pts[:, 2] >= min_roof_z]
@@ -102,7 +116,7 @@ def sample_lidar_clean_points(
 
     xy_min = roof_cand[:, :2].min(axis=0)
     xy_span = np.maximum(roof_cand[:, :2].max(axis=0) - xy_min, 1e-3)
-    cell = max(float(xy_span.max()) / 128.0, 0.25)
+    cell = max(float(xy_span.max()) / 256.0, 0.12) if densified else max(float(xy_span.max()) / 128.0, 0.25)
     gx = np.floor((roof_cand[:, 0] - xy_min[0]) / cell).astype(np.int64)
     gy = np.floor((roof_cand[:, 1] - xy_min[1]) / cell).astype(np.int64)
     keys = (gx << 20) | gy
@@ -186,7 +200,15 @@ def sample_lidar_clean_points(
     return pts
 
 
-def prepare_case(obj_path: Path, case_dir: Path, n_points: int, seed: int, coord_sys: dict, preprocess: str = "raw"):
+def prepare_case(
+    obj_path: Path,
+    case_dir: Path,
+    n_points: int,
+    seed: int,
+    coord_sys: dict,
+    preprocess: str = "raw",
+    subdivide_max_edge: float = 0.0,
+):
     case_dir.mkdir(parents=True, exist_ok=True)
     npz_path = case_dir / "input_points.npz"
     tf_path = case_dir / "transform.json"
@@ -194,10 +216,15 @@ def prepare_case(obj_path: Path, case_dir: Path, n_points: int, seed: int, coord
         return json.loads(tf_path.read_text())
 
     t0 = time.time()
-    v, f = load_obj_geometry_fast(obj_path)
+    v_orig, f_orig = load_obj_geometry_fast(obj_path)
+    v, f = v_orig, f_orig
+    if subdivide_max_edge > 0:
+        v, f = subdivide_mesh(v_orig, f_orig, max_edge=subdivide_max_edge, max_iter=6)
     if preprocess == "lidar_clean":
         fp_path = obj_path.with_suffix(".footprint.json")
-        pts_enu = sample_lidar_clean_points(v, f, fp_path, n_points=n_points, seed=seed)
+        pts_enu = sample_lidar_clean_points(
+            v, f, fp_path, n_points=n_points, seed=seed, densified=(subdivide_max_edge > 0)
+        )
     else:
         pts_enu = sample_surface_points(v, f, n_points=n_points, seed=seed)
     mn = pts_enu.min(axis=0)
@@ -214,9 +241,12 @@ def prepare_case(obj_path: Path, case_dir: Path, n_points: int, seed: int, coord
     tf = {
         "id": obj_path.stem,
         "preprocess": preprocess,
+        "subdivide_max_edge": float(subdivide_max_edge),
         "source_obj": str(obj_path),
-        "source_verts": int(len(v)),
-        "source_faces": int(len(f)),
+        "source_verts": int(len(v_orig)),
+        "source_faces": int(len(f_orig)),
+        "subdivided_verts": int(len(v)),
+        "subdivided_faces": int(len(f)),
         "sampled_points": int(n_points),
         "center_enu": center.tolist(),
         "scale": scale,
@@ -226,7 +256,8 @@ def prepare_case(obj_path: Path, case_dir: Path, n_points: int, seed: int, coord
         "coordinate_system": coord_sys,
     }
     tf_path.write_text(json.dumps(tf, indent=2) + "\n", encoding="utf-8")
-    print(f"[PREP:{preprocess}] {obj_path.stem}: {len(v):,}v/{len(f):,}f -> {n_points} pts, "
+    sub_msg = f" -> subd({subdivide_max_edge:.2f}m) {len(v):,}v/{len(f):,}f" if subdivide_max_edge > 0 else ""
+    print(f"[PREP:{preprocess}] {obj_path.stem}: {len(v_orig):,}v/{len(f_orig):,}f{sub_msg} -> {n_points} pts, "
           f"span=({span[0]:.1f}, {span[1]:.1f}, {span[2]:.1f})m ({time.time()-t0:.1f}s)", flush=True)
     return tf
 
@@ -417,6 +448,8 @@ def main():
     p.add_argument("--screen-size", type=int, default=100)
     p.add_argument("--remesh-workers", type=int, default=2)
     p.add_argument("--preprocess", choices=["raw", "lidar_clean"], default="lidar_clean")
+    p.add_argument("--subdivide-max-edge", type=float, default=0.0,
+                   help="Subdivide original triangle mesh until all edges <= value (meters); 0 disables")
     p.add_argument("--offload", choices=["auto", "none", "model", "block"], default="block")
     args = p.parse_args()
 
@@ -439,7 +472,10 @@ def main():
         if not obj_path.is_file():
             raise FileNotFoundError(obj_path)
         case_dir = args.outdir / cid
-        prepare_case(obj_path, case_dir, args.num_points, args.seed, coord_sys, preprocess=args.preprocess)
+        prepare_case(
+            obj_path, case_dir, args.num_points, args.seed, coord_sys,
+            preprocess=args.preprocess, subdivide_max_edge=args.subdivide_max_edge,
+        )
         case_dirs.append(case_dir)
 
     run_stage1_batch(root, case_dirs, seed=args.seed, steps=args.steps, guidance=3.0, offload=args.offload)
@@ -468,6 +504,8 @@ def main():
             "span_m": [round(x, 2) for x in tf["span_m"]],
             "source_verts": tf["source_verts"],
             "source_faces": tf["source_faces"],
+            "subdivided_verts": tf.get("subdivided_verts", tf["source_verts"]),
+            "subdivided_faces": tf.get("subdivided_faces", tf["source_faces"]),
             "stage1_occupied": s1["occupied"],
             "stage2_verts": s2["vertices"],
             "stage2_faces": s2["faces"],
